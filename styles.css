@@ -1,0 +1,279 @@
+/* CSS general de elementos */
+body
+{
+    background-color: #333;
+    color: white;
+    font: 200 14px Poppins, sans-serif;
+}
+
+/* titulos */
+h2
+{
+    font-size: 36px;
+    margin: 25px 5px 25px 5px;
+}
+
+h2 a
+{
+    color: rgb(190, 0, 190);
+}
+
+/* subtitulos */
+h3
+{
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+nav
+{
+    background-color: #222;
+    border-bottom: 1px solid #00c3ff;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    margin-top: -10px;
+
+}
+
+nav ul
+{
+    display: inline-block;
+    font-size: 24px;
+}
+
+section
+{
+    padding: 10px 100px 10px 100px;
+}
+
+footer
+{
+    text-align: center;
+}
+
+/* cite
+{
+    font-weight: 300;
+} */
+
+/* Textos selectivos (como #) */
+h4
+{
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Texto relleno */
+p
+{
+    text-align: justify;
+}
+
+
+
+/* CSS IDs y Clases */
+.name
+{
+    line-height: 36px;
+}
+
+.hastag
+{
+    color: #00c3ff;
+}
+
+.titulo
+{
+    color: rgb(190, 0, 190);
+    font: 20px 'Source Code Pro', sans-serif;
+}
+
+.TablaProyectos
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 30px;
+}
+
+.Card
+{
+    background-color: #2c2c2cf3;
+    text-align: center;
+    width: 350px;
+    border-radius: 15px;
+}
+
+.Card img
+{
+    padding: 5px 25px 5px 25px;
+    border-radius: 5px;
+}
+
+.Card h3
+{
+    color: #00c3ff;
+    text-align: justify;
+    padding: 0px 25px 0px 25px;
+}
+
+.Card h4
+{
+    text-align: justify;
+    padding: 5px 25px 5px 25px;
+}
+
+/* Titulo proyecto */
+.Card h5
+{
+    color: #ffffff;
+    font-weight: bold;
+    padding: 5px 25px 0x 25px;
+    font-size: 20px;
+}
+
+.Card p
+{
+    text-align: justify;
+    padding: 5px 25px 5px 25px;
+}
+
+.Card .PortfolioSeparacion
+{
+    border-bottom: 1px solid #00c3ff;
+}
+
+.Card .MoreInfo
+{
+    height: 25px;
+    padding: 5px 25px 5px 25px;
+}
+
+.Card .MoreInfo button
+{
+    background-color: rgb(74, 30, 146);
+    font-weight: 600;
+    padding: 2px 15px 2px 15px;
+    float: right;
+    color: white;
+}
+
+/* Iconos */
+ul
+{
+    list-style: none;
+}
+
+/* Intente hacerlo con el ID, pero no daba el mismo resultado. */
+li
+{
+    float: left;
+    margin-right: 25px;
+}
+
+/* Sección de inicio con fondo y borde inferior */
+#Inicio
+{
+    padding-top: 90px;
+    border-bottom: 1px solid #00c3ff;
+    background-image: url("../Portfolio/Img/Fondo/jack-b-YHFaMjk4uVo-unsplashv3.jpg");
+    /* Altura mínima */
+    min-height: 220px;
+    /* Cubrir todo el contenedor */
+    background-size: cover;
+    /* Centrar la imagen de fondo */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#IconsSocialMedia
+{
+    font-size: 35px;
+    text-align: center;
+    display: inline-block;
+    margin-left: -35px;
+}
+
+#IconsSocialMedia li
+{
+    margin-right: 30px;
+}
+
+/* Seccion sobre mi*/
+#AboutMe
+{
+    background-color: #222;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#AboutMeinfo
+{
+    padding: 10px 100px 0px 100px;
+    text-align: justify;
+}
+
+/* Sección de experiencia */
+#Experiencia
+{
+    background-color: #222;
+    /* Color de fondo */
+    border-top: 1px solid #00c3ff;
+    /* Borde superior */
+}
+
+#Portfolio
+{
+    border-top: 1px solid #00c3ff;
+}
+
+
+#GameEngine
+{
+    color: white;
+    width: 20px;
+    padding-left: 10px;
+}
+
+/* Asegura que los enlaces mantengan color blanco en diferentes navegadores */
+a:-webkit-any-link
+{
+    color: white;
+}
+
+a:any-link
+{
+    color: white;
+}
+
+a:-moz-any-link
+{
+    color: white;
+}
+
+
+
+/* Cambia el color del button/link cuando se pasa encima */
+i:hover
+{
+    color: rgb(190, 0, 190);
+}
+
+a:hover
+{
+    color: rgb(190, 0, 190);
+}
+
+nav ul i:hover
+{
+    color: white;
+}

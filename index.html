@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Inicio de la pagina, sirve para definir el contenido de la pagina -->
+
+<head> <!-- Cabecera de la pagina, sirve para definir los elementos de la pagina -->
+    <meta charset="UTF-8"> <!-- Codificacion de la pagina -->
+    <title>Portfolio - Cristian Peña</title> <!-- Titulo de la pagina -->
+    <!-- <style> <style> opcion no tan recomendada 2-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Enlace a la fuente de google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,300&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200..900&display=swap" rel="stylesheet">
+    <!-- libreria de iconos-->
+    <script src="https://kit.fontawesome.com/692ff1e671.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a la hoja de estilos más recomendada -->
+
+</head>
+
+<!-- en los h, es bueno mantener un orden, h1, h2, h3, h4, h5, h6 -->
+<!-- <body class="styles.css" (in line) menos recomendado 3-->
+
+<body> <!-- Cuerpo de la pagina, sirve para definir el contenido de la pagina -->
+    <!-- Menu de navegación-->
+    <nav>
+        <ul>
+            <li><a href="#Inicio">Inicio</a></li>
+            <li><a href="#AboutMe">Sobre mí</a></li>
+            <li><i class="fa-solid fa-code" style="margin-right: 10px;"></i>
+            </li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#Experiencia">Experiencia</a></li>
+        </ul>
+    </nav>
+    <article>
+        <!-- div es un contenedor generico, se usa para agrupar elementos en un documento -->
+        <!-- Bloque de inicio -->
+        <section id="Inicio">
+            <!-- Imagen: -->
+            <h2 class="name">Cristian Peña Villar </h2>
+            <h4 class="titulo">Ingeniero en desarrollo de videojuegos y realidad virtual</h4>
+            <h4 class="titulo" style="margin-bottom: 25px;">Universidad de Talca</h4>
+            <h4 class="hastag">#Programador</h4>
+            <h4 class="hastag">#Diseñador de videojuegos</h4>
+
+            <ul id="IconsSocialMedia">
+
+                <li><a href="mailto:cristian.penavillar@gmail.com" target="_blank"><i
+                            class="fa-regular fa-envelope"></i></a></li>
+
+                <li><a href="www.linkedin.com/in/cristian-peña-villar" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a></li>
+
+                <li><a href="https://www.twitch.tv/mr__vengador" target="_blank">
+                        <i class="fa-brands fa-twitch"></i></a></li>
+
+            </ul>
+
+
+        </section>
+        <!-- Fin de bloque de inicio -->
+        <!-- Bloque sobre mí -->
+
+        <section id="AboutMe" style="display: flex; align-items: center;">
+            <img src="./Img/Pefil.png" alt="Foto Cristian Peña" height="250">
+            <div id="AboutMeinfo">
+                <h2>Sobre mí</h2>
+
+                <p>Soy <strong>Cristian Peña</strong>, ingeniero en desarrollo de videojuegos y realidad virtual con
+                    experiencia
+                    en
+                    diseño y desarrollo de videojuegos. He trabajado en proyectos como un prototipo de rol táctico, un
+                    serious
+                    game
+                    de simulación odontológica y un videojuego Endless Runner. Capacidad para colaborar con equipos
+                    multidisciplinarios y gestionar proyectos desde la idea hasta la ejecución.
+                <p>Me defino como una persona creativa y apasionada por lo que hago, me gusta aprender <cite>“El
+                        conocimiento es
+                        poder”</cite> y siempre estoy en busca de nuevos desafíos. </p>
+                <p>En mi tiempo libre me gusta jugar videojuegos, ver series y películas, leer manga y cómics, y
+                    escuchar
+                    música.
+                </p>
+            </div>
+        </section>
+        <!-- Fin de bloque sobre mí -->
+        <!-- Bloque Portfolio-->
+        <section id="Portfolio">
+            <h2>Portfolio</h2>
+            <h3>Proyectos destacados realizados durante mi etapa universitaria y profesional, donde colaboré en equipos
+                multidisciplinarios, principalmente como programador y diseñador de interfaces.</h3>
+            <div class="TablaProyectos">
+                <div class="Card">
+                    <p>2024</p>
+                    <!-- Img temporal -->
+                    <img src="./Img/Pefil.png" alt="Portfolio 1" width="150" style="text-align: center;">
+                    <h5>Hope Animal </h5>
+                    <h3>Desarrollo de videojuegos</h3>
+                    <h4>Personal <i class="fa-brands fa-unity" id="GameEngine"></i></h4>
+                    <div class="PortfolioSeparacion"></div>
+                    <div id="ListExp">
+                        <p><strong>En desarrollo:</strong> Videojuego de aventuras 3D, inspirado en juegos como Mario 64
+                            y Genshin Impact. Trabajo total del proyecto a excepción del modelado y algunas animaciones.
+                        </p>
+                    </div>
+                    <div class="MoreInfo"><button type="button">Más info</button></div>
+                </div>
+                <div class="Card">
+                    <!-- Img temporal -->
+                    <p>2024</p>
+                    <img src="./Img/Pefil.png" alt="Portfolio 1" width="150">
+                    <h5>No Top Speed </h5>
+                    <h3>Desarrollo de videojuegos</h3>
+                    <h4>Cienart <i class="fa-brands fa-unity" id="GameEngine"></i></h4>
+                    <div class="PortfolioSeparacion"></div>
+                    <p>Videojuego Endless Runner centrado en conducir un vehículo en carretera, donde el objetivo es
+                        evitar obstáculos y obtener un gran puntaje. El videojuego se desarrolló inicialmente para PC,
+                        pero se finalizó adaptándolo para teléfonos con sistema operativo Android.</p>
+                    <div class="MoreInfo"><button type="button">Más info</button></div>
+                </div>
+                <div class="Card">
+                    <p>2024</p>
+                    <!-- Img temporal -->
+                    <img src="./Img/Pefil.png" alt="Portfolio 1" width="150">
+                    <h5>Resistance Code</h5>
+                    <h3>Desarrollo de videojuegos</h3>
+                    <h4>Propio <i class="fa-brands fa-unity" id="GameEngine"></i></h4>
+                    <div class="PortfolioSeparacion"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, consectetur? Odit consequuntur
+                        sed, reiciendis quis inventore assumenda alias corporis aperiam ipsa, maiores pariatur! Nostrum
+                        enim perferendis error unde, corrupti doloremque?</p>
+                    <div class="MoreInfo"><button type="button">Más info</button></div>
+                </div>
+                <div class="Card">
+                    <p>2023</p>
+                    <!-- Img temporal -->
+                    <img src="./Img/Pefil.png" alt="Portfolio 1" width="150">
+                    <h5>Dixit Digital </h5>
+                    <h3>Desarrollo de videojuegos</h3>
+                    <h4>Universidad de Talca <i class="fa-brands fa-unity" id="GameEngine"></i></h4>
+                    <div class="PortfolioSeparacion"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, consectetur? Odit consequuntur
+                        sed, reiciendis quis inventore assumenda alias corporis aperiam ipsa, maiores pariatur! Nostrum
+                        enim perferendis error unde, corrupti doloremque?</p>
+                    <div class="MoreInfo"><button type="button">Más info</button></div>
+                </div>
+                <div class="Card">
+                    <p>2023</p>
+                    <!-- Img temporal -->
+                    <img src="./Img/Pefil.png" alt="Portfolio 1" width="150">
+                    <h5>Prototipo Tactics (Practica II)</h5>
+                    <h3>Desarrollo de videojuegos</h3>
+                    <h4>BCS Studios <i class="fa-brands fa-unity" id="GameEngine"></i></h4>
+                    <div class="PortfolioSeparacion"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, consectetur? Odit consequuntur
+                        sed, reiciendis quis inventore assumenda alias corporis aperiam ipsa, maiores pariatur! Nostrum
+                        enim perferendis error unde, corrupti doloremque?</p>
+                    <div class="MoreInfo"><button type="button">Más info</button></div>
+                </div>
+                <div class="Card">
+                    <p>2022</p>
+                    <!-- Img temporal -->
+                    <img src="./Img/Pefil.png" alt="Portfolio 1" width="150">
+                    <h5>Elemental Change</h5>
+                    <h3>Desarrollo de videojuegos</h3>
+                    <h4>Universidad de Talca - UE 4</h4>
+                    <div class="PortfolioSeparacion"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, consectetur? Odit consequuntur
+                        sed, reiciendis quis inventore assumenda alias corporis aperiam ipsa, maiores pariatur! Nostrum
+                        enim perferendis error unde, corrupti doloremque?</p>
+                    <div class="MoreInfo"><button type="button">Más info</button></div>
+                </div>
+                <div class="Card">
+                    <p>2021</p>
+                    <!-- Img temporal -->
+                    <img src="./Img/Pefil.png" alt="Portfolio 1" width="150">
+                    <h5>Deadpool "the game"</h5>
+                    <h3>Desarrollo de videojuegos</h3>
+                    <h4>Universidad de Talca <i class="fa-brands fa-unity" id="GameEngine"></i></h4>
+                    <div class="PortfolioSeparacion"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, consectetur? Odit consequuntur
+                        sed, reiciendis quis inventore assumenda alias corporis aperiam ipsa, maiores pariatur! Nostrum
+                        enim perferendis error unde, corrupti doloremque?</p>
+                    <div class="MoreInfo"><button type="button">Más info</button></div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin de bloque Portfolio-->
+        <!-- Bloque Experiencia -->
+        <section id="Experiencia">
+            <h2>Experiencia & <a>Skill</a></h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea veniam tempore ex, cum possimus nihil
+                illum
+                exercitationem obcaecati aliquam corrupti numquam magni hic, quae commodi doloremque. Neque enim sed
+                placeat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure illum, quia perferendis
+                inventore
+                eligendi ad accusantium totam odio ratione quibusdam. Harum saepe ullam atque sint quis, adipisci
+                nihil
+                quo
+                quaerat!
+            </p>
+        </section>
+        <!-- Fin de bloque Experiencia-->
+        <!-- Bloque Contacto-->
+    </article>
+    <!-- Pie de pagina-->
+    <footer> Derechos reservados Cristian Peña @mr__vengador 2024</footer>
+
+</body>
+
+</html>
