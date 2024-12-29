@@ -10,7 +10,6 @@ body
 h2
 {
     font-size: 36px;
-    margin: 25px 5px 25px 5px;
 }
 
 h2 a
@@ -31,22 +30,6 @@ a
     text-decoration: none;
 }
 
-nav
-{
-    background-color: #222;
-    border-bottom: 1px solid #00c3ff;
-    text-align: center;
-    width: 100%;
-    position: fixed;
-    margin-top: -10px;
-
-}
-
-nav ul
-{
-    display: inline-block;
-    font-size: 24px;
-}
 
 section
 {
@@ -77,18 +60,51 @@ p
     text-align: justify;
 }
 
+/* NAV */
 
-
-/* CSS IDs y Clases */
-.name
+nav
 {
-    line-height: 36px;
+    background-color: #222;
+    border-bottom: 1px solid #00c3ff;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    margin-top: -10px;
+
 }
 
-.hastag
+nav ul
 {
-    color: #00c3ff;
+    display: inline-block;
+    font-size: 24px;
 }
+
+nav ul i:hover
+{
+    color: white;
+}
+
+/* INICIO */
+/* Sección de inicio con fondo y borde inferior */
+#Inicio
+{
+    padding-top: 90px;
+    border-bottom: 1px solid #00c3ff;
+    background-image: url("../Portfolio/Img/Fondo/jack-b-YHFaMjk4uVo-unsplashv3.jpg");
+    /* Altura mínima */
+    min-height: 220px;
+    /* Cubrir todo el contenedor */
+    background-size: cover;
+    /* Centrar la imagen de fondo */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h2 .name
+{
+    font-size: 36px;
+}
+
 
 .titulo
 {
@@ -96,6 +112,52 @@ p
     font: 20px 'Source Code Pro', sans-serif;
 }
 
+.hastag
+{
+    color: #00c3ff;
+}
+
+/* CSS IDs y Clases */
+/* Sobre mi */
+#AboutMe
+{
+
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    background-color: #222;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+#AboutMe #ImgMe
+{
+    text-align: center;
+}
+
+#AboutMe #AboutMeinfo
+{
+    padding: 10px 100px 0px 100px;
+    text-align: justify;
+
+}
+
+#AboutMe .MoreInfo
+{
+    height: 5px;
+    padding: 25px 0px 25px 0px;
+}
+
+#AboutMe .MoreInfo button
+{
+    background-color: rgb(30, 109, 146);
+    font-weight: 600;
+    padding: 2px 25px 2px 25px;
+    float: left;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Portfolio */
 .TablaProyectos
 {
     display: flex;
@@ -111,12 +173,17 @@ p
     text-align: center;
     width: 350px;
     border-radius: 15px;
+    height: 650px;
 }
 
 .Card img
 {
     padding: 5px 25px 5px 25px;
     border-radius: 5px;
+    min-width: none;
+    min-height: auto;
+    max-width: 300px;
+    max-height: 150px;
 }
 
 .Card h3
@@ -130,6 +197,7 @@ p
 {
     text-align: justify;
     padding: 5px 25px 5px 25px;
+    font-weight: 200;
 }
 
 /* Titulo proyecto */
@@ -141,15 +209,15 @@ p
     font-size: 20px;
 }
 
+.Card .PortfolioSeparacion
+{
+    border-bottom: 1px solid #00c3ff;
+}
+
 .Card p
 {
     text-align: justify;
     padding: 5px 25px 5px 25px;
-}
-
-.Card .PortfolioSeparacion
-{
-    border-bottom: 1px solid #00c3ff;
 }
 
 .Card .MoreInfo
@@ -167,6 +235,98 @@ p
     color: white;
 }
 
+#Portfolio
+{
+    border-top: 1px solid #00c3ff;
+}
+
+
+.GameEngine
+{
+    color: white;
+    width: 20px;
+    padding-left: 10px;
+}
+
+/* Experiencia */
+#Experiencia
+{
+    background-color: #222;
+    /* Color de fondo */
+    border-top: 1px solid #00c3ff;
+    /* Borde superior */
+}
+
+.gridExp
+{
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(3, 500px);
+    grid-gap: 15px;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+
+.CardExp
+{
+    background-color: #333;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 15px;
+    /* width: 400px; */
+}
+
+.CardExp h2
+{
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #00c3ff;
+    text-align: justify;
+    font-weight: 300;
+}
+
+.CardExp h3
+{
+    margin-bottom: 20px;
+    color: rgb(209, 209, 209);
+}
+
+.CardExp h4
+{
+    font-weight: 200;
+}
+
+.CardExp p
+{
+    margin-bottom: 30px;
+}
+
+/* Iconos de programas usados */
+.CardExp ul
+{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.CardExp li
+{
+    height: 20px;
+    width: max-content;
+    margin-bottom: 5px;
+}
+
+.CardExp img
+{
+    height: 25px;
+    width: max-content;
+}
+
+
+
+/* OTROS */
 /* Iconos */
 ul
 {
@@ -180,20 +340,7 @@ li
     margin-right: 25px;
 }
 
-/* Sección de inicio con fondo y borde inferior */
-#Inicio
-{
-    padding-top: 90px;
-    border-bottom: 1px solid #00c3ff;
-    background-image: url("../Portfolio/Img/Fondo/jack-b-YHFaMjk4uVo-unsplashv3.jpg");
-    /* Altura mínima */
-    min-height: 220px;
-    /* Cubrir todo el contenedor */
-    background-size: cover;
-    /* Centrar la imagen de fondo */
-    background-position: center;
-    background-repeat: no-repeat;
-}
+
 
 #IconsSocialMedia
 {
@@ -209,40 +356,11 @@ li
 }
 
 /* Seccion sobre mi*/
-#AboutMe
-{
-    background-color: #222;
-    text-align: center;
-    padding-bottom: 50px;
-}
-
-#AboutMeinfo
-{
-    padding: 10px 100px 0px 100px;
-    text-align: justify;
-}
 
 /* Sección de experiencia */
-#Experiencia
-{
-    background-color: #222;
-    /* Color de fondo */
-    border-top: 1px solid #00c3ff;
-    /* Borde superior */
-}
-
-#Portfolio
-{
-    border-top: 1px solid #00c3ff;
-}
 
 
-#GameEngine
-{
-    color: white;
-    width: 20px;
-    padding-left: 10px;
-}
+
 
 /* Asegura que los enlaces mantengan color blanco en diferentes navegadores */
 a:-webkit-any-link
@@ -271,9 +389,4 @@ i:hover
 a:hover
 {
     color: rgb(190, 0, 190);
-}
-
-nav ul i:hover
-{
-    color: white;
 }
