@@ -9,7 +9,7 @@ body
 /* titulos */
 h2
 {
-    font-size: 36px;
+    font-size: clamp(2px, 2.5vw, 36px);
 }
 
 h2 a
@@ -22,7 +22,7 @@ h3
 {
     color: white;
     font-weight: 300;
-    font-size: 18px;
+    font-size: clamp(1px, 2.5vw, 18px);
 }
 
 a
@@ -51,9 +51,9 @@ footer
 /* Textos selectivos (como #) */
 h4
 {
-    font-size: 16px;
     margin-top: 5px;
     margin-bottom: 10px;
+    font-size: clamp(1px, 2.5vw, 16px);
 }
 
 /* Texto relleno */
@@ -78,7 +78,7 @@ nav
 nav ul
 {
     display: inline-block;
-    font-size: 24px;
+    font-size: clamp(2px, 2.5vw, 24px);
 }
 
 nav ul i:hover
@@ -104,7 +104,7 @@ nav ul i:hover
 
 h2 .name
 {
-    font-size: 36px;
+    font-size: clamp(1px, 2.5vw, 36px);
 }
 
 
@@ -112,6 +112,7 @@ h2 .name
 {
     color: rgb(190, 0, 190);
     font: 20px 'Source Code Pro', sans-serif;
+    font-size: clamp(1px, 2.5vw, 20px);
 }
 
 .hastag
@@ -127,8 +128,17 @@ h2 .name
     display: grid;
     grid-template-columns: 250px 1fr;
     background-color: #222;
-    padding-bottom: 25px;
-    padding-top: 25px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+@media (max-width: 768px)
+{
+    #AboutMe
+    {
+        grid-template-columns: 1fr;
+        /* Una columna para pantallas pequeñas */
+    }
 }
 
 #AboutMe #ImgMe
@@ -138,9 +148,15 @@ h2 .name
 
 #AboutMe #AboutMeinfo
 {
-    padding: 10px 100px 0px 100px;
+    padding: 0px 100px 10px 100px;
     text-align: justify;
+    align-items: start;
 
+}
+
+#AboutMe #AboutMeinfo h2
+{
+    margin: auto;
 }
 
 #AboutMe .MoreInfo
@@ -180,9 +196,10 @@ h2 .name
 
 .Card img
 {
-    padding: 5px 25px 5px 25px;
+    padding: 0px 25px 0px 25px;
+    margin-top: 0px;
     border-radius: 5px;
-    min-width: none;
+    min-width: auto;
     min-height: auto;
     max-width: 300px;
     max-height: 150px;
@@ -194,6 +211,7 @@ h2 .name
     color: #00c3ff;
     text-align: justify;
     padding: 0px 25px 0px 25px;
+    height: 40px;
 }
 
 .Card h4
@@ -201,6 +219,9 @@ h2 .name
     text-align: justify;
     padding: 0px 25px 0px 25px;
     font-weight: 200;
+    height: 30px;
+    font-size: clamp(1px, 2.5vw, 14px);
+    margin: 0px;
 }
 
 /* Titulo proyecto */
@@ -209,7 +230,9 @@ h2 .name
     color: #ffffff;
     font-weight: bold;
     padding: 0px 25px 0x 25px;
-    font-size: 20px;
+    font-size: clamp(1px, 2.5vw, 20px);
+    margin-bottom: 0px;
+    margin-top: 10px;
 }
 
 .Card .PortfolioSeparacion
@@ -223,10 +246,16 @@ h2 .name
     padding: 5px 25px 5px 25px;
 }
 
+.Card #ListExp
+{
+    height: 240px;
+}
+
 .Card .MoreInfo
 {
     height: 25px;
     padding: 5px 25px 5px 25px;
+    float: inline-end;
 }
 
 .Card .MoreInfo button
@@ -234,7 +263,6 @@ h2 .name
     background-color: rgb(74, 30, 146);
     font-weight: 600;
     padding: 2px 15px 2px 15px;
-    float: right;
     color: white;
 }
 
@@ -303,7 +331,7 @@ h2 .name
 
 .CardExp h2
 {
-    font-size: 18px;
+    font-size: clamp(1px, 2.5vw, 18px);
     margin-bottom: 5px;
     color: #00c3ff;
     text-align: justify;
@@ -352,8 +380,7 @@ h2 .name
 .gridSkills
 {
     display: grid;
-    /* grid-template-columns: repeat(3, 1fr); */
-    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     /* Ajuste automático */
     justify-content: space-around;
     align-content: space-around;
@@ -385,7 +412,7 @@ h2 .name
 
 .CardSkill h3
 {
-    font-size: clamp(12px, 2.5vw, 18px);
+    font-size: clamp(1px, 2.5vw, 18px);
     /* Se adapta al ancho de la pantalla */
     word-wrap: break-word;
     /* Si es necesario, permite cortar palabras largas */
