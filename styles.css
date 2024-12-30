@@ -264,19 +264,40 @@ h2 .name
 {
     display: grid;
     /* grid-template-columns: repeat(3, 1fr); */
-    grid-template-columns: repeat(3, 500px);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 15px;
     justify-content: space-around;
     align-content: space-around;
+    padding-bottom: 15px;
 }
 
+/* En caso de que la pantalla no pueda soportar 3 bloques del grid */
+@media (max-width: 1024px)
+{
+    .gridExp
+    {
+        grid-template-columns: repeat(2, 1fr);
+        /* Dos columnas para pantallas medianas */
+    }
+}
 
+@media (max-width: 768px)
+{
+    .gridExp
+    {
+        grid-template-columns: 1fr;
+        /* Una columna para pantallas pequeñas */
+    }
+}
+
+/* ----------------------------------------------- */
 .CardExp
 {
     background-color: #333;
     border-radius: 20px;
     color: white;
     padding: 10px 15px;
+    margin: 10px;
     /* width: 400px; */
 }
 
@@ -311,7 +332,7 @@ h2 .name
     display: flex;
     justify-content: flex-end;
     font-size: 25px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .CardExp li
@@ -327,6 +348,50 @@ h2 .name
     width: max-content;
 }
 
+/* SKILLS */
+.gridSkills
+{
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    /* Ajuste automático */
+    justify-content: space-around;
+    align-content: space-around;
+    padding-bottom: 15px;
+}
+
+
+
+/* ----------------------------------------------- */
+.CardSkill
+{
+    background-color: #333;
+    border-radius: 20px;
+    color: white;
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+
+}
+
+.CardSkill img
+{
+    width: min-content(auto);
+    height: 50px;
+    padding-top: 7.5px;
+    margin-bottom: 5px;
+
+}
+
+.CardSkill h3
+{
+    font-size: clamp(12px, 2.5vw, 18px);
+    /* Se adapta al ancho de la pantalla */
+    word-wrap: break-word;
+    /* Si es necesario, permite cortar palabras largas */
+    text-align: center;
+    /* Centra el texto dentro del contenedor */
+}
 
 
 /* OTROS */
