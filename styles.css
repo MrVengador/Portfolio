@@ -21,8 +21,9 @@ h2 a
 h3
 {
     color: white;
-    font-weight: 300;
+    font-weight: 200;
     font-size: clamp(1px, 2.5vw, 18px);
+    text-align: justify;
 }
 
 a
@@ -130,6 +131,7 @@ h2 .name
     background-color: #222;
     padding-top: 60px;
     padding-bottom: 60px;
+    text-align: center;
 }
 
 @media (max-width: 768px)
@@ -191,7 +193,9 @@ h2 .name
     text-align: center;
     width: 350px;
     border-radius: 15px;
-    height: 670px;
+    height: 660px;
+    display: grid;
+    grid-template-rows: 2;
 }
 
 .Card img
@@ -211,7 +215,6 @@ h2 .name
     color: #00c3ff;
     text-align: justify;
     padding: 0px 25px 0px 25px;
-    height: 40px;
 }
 
 .Card h4
@@ -219,7 +222,6 @@ h2 .name
     text-align: justify;
     padding: 0px 25px 0px 25px;
     font-weight: 200;
-    height: 30px;
     font-size: clamp(1px, 2.5vw, 14px);
     margin: 0px;
 }
@@ -238,24 +240,34 @@ h2 .name
 .Card .PortfolioSeparacion
 {
     border-bottom: 1px solid #00c3ff;
+
 }
 
 .Card p
 {
     text-align: justify;
-    padding: 5px 25px 5px 25px;
+    padding: 5px 25px 0px 25px;
 }
 
-.Card #ListExp
+.Card .DatesExp
 {
-    height: 240px;
+    height: 320px;
+    /* background-color: red; */
+}
+
+.Card .ListExp
+{
+    height: 280px;
+    /* background-color: blue; */
+    display: grid;
+    grid-template-rows: 240px 10px 20px;
 }
 
 .Card .MoreInfo
 {
     height: 25px;
     padding: 5px 25px 5px 25px;
-    float: inline-end;
+    justify-self: end;
 }
 
 .Card .MoreInfo button
@@ -365,14 +377,12 @@ h2 .name
 
 .CardExp li
 {
-    height: 20px;
     width: max-content;
     margin-bottom: 5px;
 }
 
 .CardExp img
 {
-    height: 25px;
     width: max-content;
 }
 
@@ -420,6 +430,129 @@ h2 .name
     /* Centra el texto dentro del contenedor */
 }
 
+/* Licenciados */
+
+#Certificados
+{
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-content: space-around;
+    align-content: space-around;
+    padding-bottom: 15px;
+}
+
+#Certificados h2
+{
+    font-size: 16px;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+#Certificados h3
+{
+    color: white;
+    font-size: 14px;
+    font-weight: 200;
+    text-align: end;
+    margin: 0;
+    padding: 0;
+}
+
+#Certificados h4
+{
+    font-size: 16px;
+    font-weight: 400;
+    color: #beacff;
+}
+
+#Certificados h5
+{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0px;
+    width: auto;
+}
+
+#Certificados a:hover
+{
+    color: cyan;
+}
+
+#Certificados .CertificadoCardTitle
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 0px;
+}
+
+#Certificados .CertificadoCard
+{
+    background-color: #333;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 15px;
+    margin: 10px;
+    display: grid;
+    grid-template-rows: 80px 50px 40px;
+
+}
+
+
+/* COntacto */
+
+#Contact
+{
+    border-top: 1px solid #00c3ff;
+    background-color: #233f47;
+}
+
+#Contact h2 b
+{
+    color: #00c3ff;
+}
+
+#Contact .itemform
+{
+    display: grid;
+    grid-template-columns: 150px 350px;
+    padding: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#Contact .itemform label
+{
+    margin-right: 20px;
+    width: 20px;
+    font-weight: 700;
+}
+
+#Contact .itemform input,
+#Contact .itemform textarea
+{
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+#Contact .itemform input[type="submit"]
+{
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    grid-column: 2/3;
+    justify-self: end;
+}
+
+/* Footer */
+footer
+{
+    border-top: 2px solid #00c3ff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 /* OTROS */
 /* Iconos */
@@ -449,10 +582,6 @@ li
 {
     margin-right: 30px;
 }
-
-/* Seccion sobre mi*/
-
-/* Sección de experiencia */
 
 
 
