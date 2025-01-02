@@ -1,3 +1,11 @@
+/* Reset CSS */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* CSS general de elementos */
 body
 {
@@ -35,8 +43,6 @@ a
 section
 {
     padding: 10px 100px 10px 100px;
-    /* padding: 10px 5vw; */
-    /* 5vw ajusta el padding según el ancho de la pantalla */
 }
 
 footer
@@ -72,7 +78,8 @@ nav
     text-align: center;
     width: 100%;
     position: fixed;
-    margin-top: -10px;
+    /* margin-top: 10px; */
+    /* Lo comente, porque al usar el reset se ajusto bien sin esto */
 
 }
 
@@ -88,17 +95,13 @@ nav ul i:hover
 }
 
 /* INICIO */
-/* Sección de inicio con fondo y borde inferior */
 #Inicio
 {
     padding-top: 90px;
     border-bottom: 1px solid #00c3ff;
     background-image: url("../Portfolio/Img/Fondo/jack-b-YHFaMjk4uVo-unsplashv3.jpg");
-    /* Altura mínima */
     min-height: 220px;
-    /* Cubrir todo el contenedor */
     background-size: cover;
-    /* Centrar la imagen de fondo */
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -121,7 +124,19 @@ h2 .name
     color: #00c3ff;
 }
 
-/* CSS IDs y Clases */
+#IconsSocialMedia
+{
+    font-size: 35px;
+    text-align: center;
+    display: inline-block;
+    padding-top: 10px;
+}
+
+#IconsSocialMedia li
+{
+    margin-right: 30px;
+}
+
 /* Sobre mi */
 #AboutMe
 {
@@ -139,7 +154,6 @@ h2 .name
     #AboutMe
     {
         grid-template-columns: 1fr;
-        /* Una columna para pantallas pequeñas */
     }
 }
 
@@ -178,6 +192,17 @@ h2 .name
 }
 
 /* Portfolio */
+#Portfolio
+{
+    border-top: 1px solid #00c3ff;
+}
+
+#Portfolio h3
+{
+    padding: 15px 0px 40px 0px;
+    font-weight: 500;
+}
+
 .TablaProyectos
 {
     display: flex;
@@ -202,7 +227,6 @@ h2 .name
 .Card video,
 .Card iframe
 {
-    /* padding: 0px 25px 0px 25px; */
     margin-top: 0px;
     border-radius: 15px;
     min-width: auto;
@@ -213,20 +237,22 @@ h2 .name
 }
 
 
-.Card h3
+
+#Portfolio .Card h3
 {
     color: #00c3ff;
     text-align: justify;
-    padding: 0px 25px 0px 25px;
+    margin: 0px 25px 0px 25px;
+    padding: 10px 0px 20px 0px;
 }
 
 .Card h4
 {
     text-align: justify;
+    margin-bottom: 0px;
     padding: 0px 25px 0px 25px;
     font-weight: 200;
     font-size: clamp(1px, 2.5vw, 14px);
-    margin: 0px;
 }
 
 /* Titulo proyecto */
@@ -249,19 +275,22 @@ h2 .name
 .Card p
 {
     text-align: justify;
-    padding: 0px 25px 0px 25px;
+    padding: 10px 25px 0px 25px;
 }
 
 .Card .DatesExp
 {
     height: 320px;
-    /* background-color: red; */
+}
+
+.Card .DatesExp p
+{
+    padding-bottom: 5px;
 }
 
 .Card .ListExp
 {
     height: 280px;
-    /* background-color: blue; */
     display: grid;
     grid-template-rows: 240px 10px 20px;
 }
@@ -281,11 +310,6 @@ h2 .name
     color: white;
 }
 
-#Portfolio
-{
-    border-top: 1px solid #00c3ff;
-}
-
 
 .GameEngine
 {
@@ -298,15 +322,27 @@ h2 .name
 #Experiencia
 {
     background-color: #222;
-    /* Color de fondo */
     border-top: 1px solid #00c3ff;
-    /* Borde superior */
 }
+
+#Experiencia h4
+{
+    padding: 15px 10px 0px 10px;
+    font-weight: 600;
+}
+
+#Experiencia h3
+{
+    font-weight: 500;
+    color: #00c3ff;
+    padding: 15px 10px 30px 10px;
+}
+
+
 
 .gridExp
 {
     display: grid;
-    /* grid-template-columns: repeat(3, 1fr); */
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 15px;
     justify-content: space-around;
@@ -320,7 +356,6 @@ h2 .name
     .gridExp
     {
         grid-template-columns: repeat(2, 1fr);
-        /* Dos columnas para pantallas medianas */
     }
 }
 
@@ -329,7 +364,6 @@ h2 .name
     .gridExp
     {
         grid-template-columns: 1fr;
-        /* Una columna para pantallas pequeñas */
     }
 }
 
@@ -339,8 +373,7 @@ h2 .name
     background-color: #333;
     border-radius: 20px;
     color: white;
-    padding: 10px 15px;
-    margin: 10px;
+    padding: 10px;
     /* width: 400px; */
 }
 
@@ -374,14 +407,13 @@ h2 .name
 {
     display: flex;
     justify-content: flex-end;
+    align-items: flex-end;
     font-size: 25px;
-    margin-bottom: 15px;
 }
 
 .CardExp li
 {
     width: max-content;
-    margin-bottom: 5px;
 }
 
 .CardExp img,
@@ -424,14 +456,12 @@ h2 .name
 
 }
 
-.CardSkill h3
+#Experiencia .CardSkill h3
 {
     font-size: clamp(1px, 2.5vw, 18px);
-    /* Se adapta al ancho de la pantalla */
     word-wrap: break-word;
-    /* Si es necesario, permite cortar palabras largas */
     text-align: center;
-    /* Centra el texto dentro del contenedor */
+    color: white;
 }
 
 /* Licenciados */
@@ -439,12 +469,28 @@ h2 .name
 #Certificados
 {
     display: grid;
-    /* grid-template-columns: repeat(3, 1fr); */
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     justify-content: space-around;
     align-content: space-around;
     padding-bottom: 15px;
+}
+
+/* En caso de que la pantalla no pueda soportar 3 bloques del grid */
+@media (max-width: 1024px)
+{
+    #Certificados
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px)
+{
+    #Certificados
+    {
+        grid-template-columns: 1fr;
+    }
 }
 
 #Certificados h2
@@ -470,17 +516,20 @@ h2 .name
     font-size: 16px;
     font-weight: 400;
     color: #beacff;
+    margin: 0px;
+    padding: 5px 0px 5px 0px;
 }
 
 #Certificados h5
 {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     margin: 0px;
     width: auto;
+    padding: 5px 0px 5px 0px;
 }
 
-#Certificados a:hover
+#Certificados .CertificadoCard a:hover
 {
     color: cyan;
 }
@@ -505,7 +554,7 @@ h2 .name
 }
 
 
-/* COntacto */
+/* Contacto */
 
 #Contact
 {
@@ -525,6 +574,23 @@ h2 .name
     padding: 10px;
     justify-content: center;
     margin-bottom: 10px;
+}
+
+/* En caso de que la pantalla no pueda soportar 3 bloques del grid */
+@media (max-width: 1024px)
+{
+    #Contact .itemform
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px)
+{
+    #Contact .itemform
+    {
+        grid-template-columns: 1fr;
+    }
 }
 
 #Contact .itemform label
@@ -572,27 +638,13 @@ ul
     list-style: none;
 }
 
-/* Intente hacerlo con el ID, pero no daba el mismo resultado. */
+
 li
 {
     float: left;
     margin-right: 25px;
 }
 
-
-
-#IconsSocialMedia
-{
-    font-size: 35px;
-    text-align: center;
-    display: inline-block;
-    margin-left: -35px;
-}
-
-#IconsSocialMedia li
-{
-    margin-right: 30px;
-}
 
 
 
