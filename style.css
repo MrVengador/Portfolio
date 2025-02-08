@@ -51,12 +51,6 @@ footer
 } */
 
 /* Textos selectivos (como #) */
-h4
-{
-    margin-top: 5px;
-    margin-bottom: 10px;
-    font-size: clamp(1px, 2.5vw, 16px);
-}
 
 /* Texto relleno */
 p
@@ -92,12 +86,11 @@ nav ul i:hover
 /* INICIO */
 #Inicio
 {
-    padding-top: 40px;
     border-bottom: 1px solid #00c3ff;
     background-image: url("./Img/Fondo/jack-b-YHFaMjk4uVo-unsplashv3.jpg");
-    min-height: 220px;
+    min-height: auto;
     background-size: cover;
-    background-position: left;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -110,8 +103,8 @@ h2 .name
 .titulo
 {
     color: rgb(190, 0, 190);
-    font: 20px 'Source Code Pro', sans-serif;
-    /* font-size: clamp(1px, 2.5vw, 20px); */
+    font-family: 'Source Code Pro', sans-serif;
+    font-size: clamp(14px, 2.5vw, 20px);
 }
 
 .hastag
