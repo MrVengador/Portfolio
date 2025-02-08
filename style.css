@@ -176,15 +176,9 @@ h2 .name
     padding: 25px 0px 25px 0px;
 }
 
-#AboutMe .MoreInfo button
-{
-    background-color: rgb(30, 109, 146);
-    font-weight: 600;
-    padding: 2px 25px 2px 25px;
-    float: left;
-    color: white;
-    border-radius: 5px;
-}
+
+
+
 
 /* Portfolio */
 #Portfolio
