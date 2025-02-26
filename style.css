@@ -663,3 +663,13 @@ a:hover
 {
     color: #B197FC !important;
 }
+
+
+
+/* Temporal */
+
+#Contact_Temp h3,
+#Contact_Temp h4
+{
+    text-align: center;
+}
