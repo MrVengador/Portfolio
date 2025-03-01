@@ -110,6 +110,7 @@ h2 .name
 .hastag
 {
     color: #00c3ff;
+    font-size: clamp(1px, 2.5vw, 18px);
 }
 
 #IconsSocialMedia
@@ -182,7 +183,13 @@ h2 .name
 #Portfolio h3
 {
     font-weight: 500;
+    color: white;
+    font-size: clamp(1px, 2.5vw, 18px);
+    font-weight: 200;
+    text-align: start;
 }
+
+
 
 .TablaProyectos
 {
@@ -222,6 +229,8 @@ h2 .name
 {
     color: white;
 }
+
+
 
 #Portfolio .card h3
 {
