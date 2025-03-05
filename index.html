@@ -28,41 +28,84 @@
 </head>
 
 <body>
-    <!-- Menu de navegación-->
+    <!-- Bloque de nav -->
 
     <nav class="navbar sticky-top bg-body-tertiary bg-dark navbar-expand-md" data-bs-theme="dark">
         <div class="container-fluid">
             <!-- <a class="navbar-brand" href="#Inicio">Portfolio - Cristian Peña</a> -->
-            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <!-- Menu de navegación -->
+                <ul class="navbar-nav align-items-center  nav-underline" id="navbarSpy">
+                    <li class="nav-item mx-2"><a class="nav-link" href="#Inicio">
+                            <span data-en>About me</span>
+                            <span data-es>Sobre mí</span>
+                        </a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="#Portfolio">
+                            <span> Portfolio </span>
+                        </a></li>
+                    <li class="nav-item mx-2"><i class="fa-solid fa-code" style="color: #B197FC;"></i></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="#Experiencia">
+                            <span data-en>Experience</span>
+                            <span data-es>Experiencia</span>
+                        </a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="#Contact">
+                            <span data-en>Contact</span>
+                            <span data-es>Contacto</span>
+                        </a></li>
+
+                    <!-- <li class="nav-item"><a href="#Contact">Contacto</a></li> -->
+                </ul>
+
+            </div>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav"> <!-- Menu de navegación -->
-                <ul class="navbar-nav align-items-center  nav-underline" id="navbarSpy">
-                    <li class="nav-item mx-2"><a class="nav-link" href="#Inicio">Sobre mí</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link" href="#Portfolio">Portfolio</a></li>
-                    <li class="nav-item mx-2"><i class="fa-solid fa-code" style="color: #B197FC;"></i></li>
-                    <li class="nav-item mx-2"><a class="nav-link" href="#Experiencia">Experiencia</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link" href="#Contact">Contacto</a></li>
+            <div class="dropdown" id="Language-button">
+                <a class="btn btn-secondary dropdown-toggle d-inline-flex align-items-center" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <span data-en><i class="bi bi-translate"></i> Language</span>
+                    <span data-es><i class="bi bi-translate"></i> Idioma</span>
+                </a>
 
-                    <!-- <li class="nav-item"><a href="#Contact">Contacto</a></li> -->
+                <ul class="dropdown-menu">
+                    <li>
+                        <button class="dropdown-item" data-en>English</button>
+                        <button class="dropdown-item" data-es onclick="setLanguage('en')">Inglés</button>
+                    </li>
+                    <li>
+                        <button class="dropdown-item" data-en onclick="setLanguage('es')">Spanish</button>
+                        <button class="dropdown-item" data-es>Español</button>
+                    </li>
                 </ul>
             </div>
+
+
         </div>
     </nav>
+    <!-- Fin de nav -->
 
     <main data-bs-spy="scroll" data-bs-target="#navbarSpy">
+
         <!-- Bloque de inicio -->
 
         <section id="Inicio" data-bs-spy="scroll" class="pt-5">
             <div class="">
-                <h2 class="name">Cristian Peña Villar </h2>
-                <h4 class="titulo">Ingeniero en desarrollo de videojuegos y realidad virtual</h4>
-                <h4 class="titulo" style="margin-bottom: 25px;">Universidad de Talca</h4>
-                <h4 class="hastag">#Programador</h4>
-                <h4 class="hastag">#Diseñador de videojuegos</h4>
-                <h4 class="hastag">#Desarrollo frontend</h4>
+                <h2 class="name">Cristian Andrés Peña Villar </h2>
+                <h4 class="titulo mb-4" data-en>Engineer in video game development and virtual reality <br>University of
+                    Talca</h4>
+                <h4 class="titulo mb-4" data-es>Ingeniero en desarrollo de videojuegos y realidad
+                    virtual <br>Universidad de Talca</h4>
+
+                <h4 class="hastag" data-en>#Programmer</h4>
+                <h4 class="hastag" data-en>#Video game designer</h4>
+                <h4 class="hastag" data-en>#Frontend development</h4>
+
+                <h4 class="hastag" data-es>#Programador</h4>
+                <h4 class="hastag" data-es>#Diseñador de videojuegos</h4>
+                <h4 class="hastag" data-es>#Desarrollo frontend</h4>
 
 
                 <ul class="list-group list-group-horizontal" id="IconsSocialMedia">
@@ -91,42 +134,60 @@
 
             <div id="AboutMeinfo" class="mx-5">
                 <!-- <div class="col ms-5"> -->
-                <h2 class="mb-3">Sobre mí</h2>
+                <h2 class="mb-3" data-en>About Me</h2>
+                <h2 class="mb-3" data-es>Sobre mí</h2>
 
-                <p><strong>Soy Cristian Peña</strong>, ingeniero en desarrollo de videojuegos y
-                    realidad virtual, con
-                    experiencia en
-                    diseño y desarrollo de videojuegos. He participado en proyectos como un prototipo de rol táctico, un
-                    <em>serious
-                        game</em> de simulación odontológica y un videojuego <em>Endless Runner</em>. Tengo habilidades
-                    para colaborar
-                    en equipos multidisciplinarios y gestionar proyectos desde la concepción de la idea hasta su
-                    ejecución.
-                </p>
+
                 <!-- 
                 <p>Además, cuento con conocimientos básicos de <em>frontend</em>, incluyendo HTML, CSS y JavaScript, y
                     experiencia en el
                     uso de frameworks como Bootstrap para diseñar sitios web responsivos y atractivos. En conjunto a
                     conocimientos en el desarrollo de aplicaciones web utilizando React y Next.js.</p> -->
 
-                <p>Me considero una persona creativa y apasionada por mi trabajo. Disfruto aprender, porque como dice el
-                    dicho:
-                    <cite>“El conocimiento es poder”</cite>, y siempre busco nuevos desafíos que me permitan seguir
-                    creciendo
-                    profesionalmente.
+
+                <p data-en>
+                    <strong>I am Cristian Peña</strong>, a videogame and virtual reality development engineer, with
+                    experience in the design and development of video games. I have participated in projects such as a
+                    tactical role-playing prototype, a <em>serious game</em> for dental simulation, and an
+                    <em>Endless Runner</em> game. I have skills to collaborate in multidisciplinary teams and manage
+                    projects from the conception of the idea to its execution.
+                    <br><br>
+                    I consider myself a creative person, passionate about my work. I enjoy learning, because as the
+                    saying goes: <cite>“Knowledge is power”</cite>, and I am always seeking new challenges to keep
+                    growing professionally.
+                    <br><br>
+                    In my free time, I like to play video games, go to the gym, read, and listen to music.
                 </p>
 
-                <p>En mi tiempo libre, me gusta jugar videojuegos, ir al gimnasio, leer y escuchar musica.</p>
+                <p data-es>
+                    <strong>Soy Cristian Peña</strong>, ingeniero en desarrollo de videojuegos y realidad virtual, con
+                    experiencia en diseño y desarrollo de videojuegos. He participado en proyectos como un prototipo de
+                    rol táctico, un <em>serious game</em> de simulación odontológica y un videojuego
+                    <em>Endless Runner</em>. Tengo habilidades para colaborar en equipos multidisciplinarios y gestionar
+                    proyectos desde la concepción de la idea hasta su ejecución.
+                    <br><br>
+                    Me considero una persona creativa y apasionada por mi trabajo. Disfruto aprender, porque como dice
+                    el dicho: <cite>“El conocimiento es poder”</cite>, y siempre busco nuevos desafíos que me permitan
+                    seguir creciendo profesionalmente.
+                    <br><br>
+                    En mi tiempo libre, me gusta jugar videojuegos, ir al gimnasio, leer y escuchar música.
+                </p>
 
-                <div class="MoreInfo mt-5">
+
+                <div class="MoreInfo mt-5 d-flex">
                     <a href="Pdf/Cristian Peña - CV.pdf" class="btn btn-danger" target="_blank">
                         <i class="bi bi-filetype-pdf pe-2"></i>
-                        Ver CV
+                        <span data-en> View CV</span>
+                        <span data-es> Ver CV</span>
                     </a>
                     <a href="Pdf/Cristian Peña - CV.pdf" class="btn btn-primary ms-5" download="Cristian_Peña_CV.pdf"
-                        id="Button_Dowload"> <i class="bi bi-filetype-pdf pe-2"></i>
-                        Descargar CV</a>
+                        id="Button_Dowload">
+                        <i class="bi bi-filetype-pdf pe-2"></i>
+                        <span data-en> Download CV</span>
+                        <span data-es> Descargar CV</span>
+                    </a>
                 </div>
+
             </div>
             <!-- </div> -->
 
@@ -140,7 +201,10 @@
         <section id="Portfolio" data-bs-spy="scroll">
             <div class="my-5">
                 <h2 class="py-2">Portfolio</h2>
-                <h3 class="py-2 mb-4">Proyectos destacables realizados durante mi etapa universitaria y profesional.
+                <h3 class="py-2 mb-4" data-en>Notable projects carried out during my university and professional years.
+                </h3>
+                <h3 class="py-2 mb-4" data-es>Proyectos destacables realizados durante mi etapa
+                    universitaria y profesional.
                 </h3>
                 <div class="row row-cols g-4 d-flex justify-content-center justify-content-lg-start">
 
@@ -151,13 +215,23 @@
                                 class="card-img-top p-2 rounded-4 img-fluid w-100" alt="Ghosts of the deep"
                                 style="max-height: 170px; object-fit:contain;">
                             <div class="card-body">
+
                                 <h5 class="card-title">Ghosts of the deep</h5>
-                                <h3>Desarrollo de videojuegos</h3>
+                                <h3 data-en>Video game development</h3>
+                                <h3 data-es>Desarrollo de videojuegos</h3>
+
                                 <h4 class="fs-6">Global Game Jam ® <br> January 2025 <i
                                         class="fa-brands fa-unity GameEngine"></i>
                                 </h4>
                                 <div class="PortfolioSeparacion my-2"></div>
-                                <p class="px-1">Videojuego de plataformas y rompecabezas 2D, en donde el jugador es un
+
+                                <p class="px-1" data-en>2D puzzle platformer video game, where the player is a
+                                    diver who must capture ghosts in sunken ships and collect submerged treasures.
+                                    <br>This using an air cannon that will allow him to create and move bubbles to
+                                    trap his enemies.
+                                </p>
+                                <p class="px-1" data-es>Videojuego de plataformas y rompecabezas
+                                    2D, en donde el jugador es un
                                     buzo que debe capturar fantasmas en barcos hundidos y recolectar tesoros sumergidos.
                                     <br>Esto utilizando un cañón de aire que le permitirá crear y mover burbujas para
                                     atrapar a sus enemigos.
@@ -214,95 +288,36 @@
                     </div>
 
 
-
-                    <!-- <div class="col card-game">
-                        <div class="card bg-dark text-white h-100" data-bs-toggle="modal"
-                            data-bs-target="#HopeAnimalModal" style="cursor: pointer;">
-                            <img src="./Img/Ref/HopeAnimalv01.png" class="card-img-top p-2 rounded-4 img-fluid w-100"
-                                alt="HopeAnimal" style="height: auto; object-fit: cover;">
-                            <div class="card-body">
-                                <h5 class="card-title">Hope Animal</h5>
-                                <h3>Desarrollo de videojuegos</h3>
-                                <h4 class="fs-6">Personal <i class="fa-brands fa-unity GameEngine"></i></h4>
-                                <div class="PortfolioSeparacion my-2"></div>
-                                <p class="px-1"><strong>En desarrollo:</strong> Videojuego de aventuras 3D, en donde
-                                    animales magicos nos otorgaran habilidades con las cuales debemos
-                                    rescatarles de unos misteriosos robots.
-
-                                    <br>Sus mecanicas se basan en cambio de habilidades (inspirado en Boku No Hero Ultra
-                                    Rumble).
-                                    <br><br><small>*Trabajo autonomo como hobbie</small>.
-                                </p>
-                            </div>
-                        </div>
-                    </div> -->
-
-
-                    <!-- <div class="modal fade bg-dark bg-opacity-25" id="HopeAnimalModal" tabindex="-1"
-                        aria-labelledby="productModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg">
-                            <div class="modal-content bg-dark text-white" id="Modal_Grafica">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="productModalLabel">Hope Animal <small
-                                            class="text-warning mx-2 fs-6">En desarrollo - No
-                                            jugable</small></h5>
-                                
-
-                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <div id="carouselHopeAnimal" class="carousel slide carousel-fade"
-                                        data-bs-ride="carousel">
-                                        <div class="carousel-inner text-center">
-                                            <div class="carousel-item active" data-bs-interval="10000">
-                                                <img src="./Img/Ref/HopeAnimalv00.png" class="d-block mx-auto img-fluid"
-                                                    alt="Hope Animal Ref 1">
-                                            </div>
-                                            <div class="carousel-item" data-bs-interval="2000">
-                                                <img src="./Img/Ref/HopeAnimalv01.png" class="d-block mx-auto img-fluid"
-                                                    alt="Hope Animal Ref 2">
-                                            </div>
-                                            <div class="carousel-item" data-bs-interval="12000">
-                                                <video controls autoplay class="card-img-top p-2 rounded-4">
-                                                    <source src="./Media/HopeAnimal vid.mp4" type="video/mp4"
-                                                        title="Hope Animal Ref 3">
-                                                </video>
-                                            </div>
-
-                                        </div>
-                                        <button class="carousel-control-prev" type="button"
-                                            data-bs-target="#carouselHopeAnimal" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button"
-                                            data-bs-target="#carouselHopeAnimal" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
                     <div class="col card-game">
                         <div class="card bg-dark text-white h-100" data-bs-toggle="modal" data-bs-target="#NTSModal"
                             style="cursor: pointer;">
                             <img src="./Media/NTS_Gameplay.gif" class="card-img-top p-2 rounded-4"
                                 alt="No Top Speed Gameplay" style="max-height: 170px; object-fit: cover;">
                             <div class="card-body">
+
                                 <h5 class="card-title">No Top Speed</h5>
-                                <h3>Desarrollo de videojuegos</h3>
-                                <h4 class="fs-6">Cienart Studios <i class="fa-brands fa-unity GameEngine"></i></h4>
+                                <h3 data-en>Video game development</h3>
+                                <h3 data-es>Desarrollo de videojuegos</h3>
+                                <h4 class="fs-6">Cienart Studios <i class="fa-brands fa-unity GameEngine"></i> <br> <br>
+                                </h4>
                                 <div class="PortfolioSeparacion my-2"></div>
-                                <p class="px-1">Videojuego Endless Runner centrado en conducir un vehículo en carretera,
+
+                                <p class="px-1" data-en>Endless Runner video game focused on driving a vehicle on the
+                                    road,
+                                    where the objective is
+                                    to avoid obstacles and get a high score.
+                                    <br>The video game was initially developed
+                                    for
+                                    PC, but was finally adapted for Android devices.
+                                </p>
+
+                                <p class="px-1" data-es>Videojuego Endless Runner centrado en
+                                    conducir un vehículo en carretera,
                                     donde el objetivo es
                                     evitar obstáculos y obtener un gran puntaje.
                                     <br>El videojuego se desarrolló
                                     inicialmente para
-                                    PC, pero se finalizó adaptándolo para teléfonos con sistema operativo Android.
+                                    PC, pero se finalizó adaptándolo para dispositivos Android.
                                 </p>
                             </div>
                         </div>
@@ -357,75 +372,6 @@
                         </div>
                     </div>
 
-                    <!-- <div class="col card-game">
-                        <div class="card bg-dark text-white h-100" data-bs-toggle="modal"
-                            data-bs-target="#ResistanceCodeModal" style="cursor: pointer;">
-                            <img src="./Img/Ref/ResistanceCode.png" class="card-img-top p-2 rounded-4"
-                                alt="Resistance Code" style="max-height: 170px; object-fit: cover;">
-                            <div class="card-body">
-                                <h5 class="card-title">Resistance Code</h5>
-                                <h3>Desarrollo de videojuegos</h3>
-                                <h4 class="fs-6">Personal <i class="fa-brands fa-unity GameEngine"></i></h4>
-                                <div class="PortfolioSeparacion my-2"></div>
-                                <p class="px-1">Inspirado en plataformeros como Megaman, este videojuego fue creado como
-                                    un proyecto casual,
-                                    por lo que existen algunos errores leves.
-                                    <br>El desarrollo fue realizado en su
-                                    totalidad,
-                                    mientras que los assets de arte y sonido fueron adquiridos gratuitamente de itch.io
-                                    y la
-                                    Unity Asset Store.
-                                </p>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- 
-                    <div class="modal fade bg-dark bg-opacity-25" id="ResistanceCodeModal" tabindex="-1"
-                        aria-labelledby="productModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg">
-                            <div class="modal-content bg-dark text-white" id="Modal_Grafica">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="productModalLabel">Resistance Code <small
-                                            class="text-warning mx-2 fs-6">Abandonado</small>
-                                    </h5>
-                                    <a class="btn btn-outline-info mx-3"
-                                        href="https://mrvengador.itch.io/resistance-code" role="button">Jugar</a>
-
-                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <div id="carouselRCode" class="carousel slide carousel-fade"
-                                        data-bs-ride="carousel">
-                                        <div class="carousel-inner text-center">
-                                            <div class="carousel-item active" data-bs-interval="10000">
-                                                <img src="./Img/Ref/ResistanceCode.png"
-                                                    class="d-block mx-auto img-fluid" alt="Resistance Code Ref 1">
-                                            </div>
-                                            <div class="carousel-item" data-bs-interval="2000">
-                                                <img src="./Img/Ref/ResistanceCode1.png"
-                                                    class="d-block mx-auto img-fluid" alt="Resistance Code Ref 2">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="./Img/Ref/ResistanceCode2.png"
-                                                    class="d-block mx-auto img-fluid" alt="Resistance Code Ref 3">
-                                            </div>
-                                        </div>
-                                        <button class="carousel-control-prev" type="button"
-                                            data-bs-target="#carouselRCode" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button"
-                                            data-bs-target="#carouselRCode" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
 
 
                     <div class="col card-game">
@@ -435,16 +381,25 @@
                                 style="max-height: 170px; object-fit: cover;">
                             <div class="card-body">
                                 <h5 class="card-title">Dixit Digital</h5>
-                                <h3>Desarrollo de videojuegos</h3>
-                                <h4 class="fs-6">Universidad de Talca <i class="fa-brands fa-unity GameEngine"></i></h4>
+                                <h3 data-en>Video game development</h3>
+                                <h3 data-es>Desarrollo de videojuegos</h3>
+
+                                <h4 class="fs-6" data-en>University of Talca <i
+                                        class="fa-brands fa-unity GameEngine"></i><br><br></h4>
+                                <h4 class="fs-6" data-es>Universidad de Talca <i
+                                        class="fa-brands fa-unity GameEngine"></i><br><br></h4>
+
                                 <div class="PortfolioSeparacion my-2 rounded-4"></div>
-                                <p class="px-1">Versión digital del juego de mesa “Dixit” desarrollado para un estudio
-                                    academico. Se
-                                    realizó toda la programación, utilizando arte de terceros, como herramientas de
-                                    inteligencia
-                                    artificial. Además, se implementó el multijugador online con “Photon Unity Network”,
-                                    y
-                                    contaba con compatibilidad de Android y PC.</p>
+                                <p class="px-1" data-en>Digital version of the board game “Dixit” developed for an
+                                    academic study. All programming was done using third-party art, such as artificial
+                                    intelligence tools. In addition, online multiplayer was implemented with “Photon
+                                    Unity Network”, and it had Android and PC compatibility.</p>
+
+                                <p class="px-1" data-es>Versión digital del juego de mesa “Dixit”
+                                    desarrollado para un estudio
+                                    academico. Se realizó toda la programación, utilizando arte de terceros, como
+                                    herramientas de inteligencia artificial. Además, se implementó el multijugador
+                                    online con “Photon Unity Network”, y contaba con compatibilidad de Android y PC.</p>
                             </div>
                         </div>
                     </div>
@@ -501,16 +456,23 @@
                             <img src="./Media/Practica2Video.gif" class="card-img-top p-2 rounded-4" alt="Practica 2"
                                 style="max-height: 170px; object-fit: cover;">
                             <div class="card-body">
+
                                 <h5 class="card-title">Prototipo Tactics</h5>
-                                <h3>Desarrollo de videojuegos</h3>
-                                <h4 class="fs-6">BCS Studios <i class="fa-brands fa-unity GameEngine"></i></h4>
+                                <h3 data-en>Video game development</h3>
+                                <h3 data-es>Desarrollo de videojuegos</h3>
+                                <h4 class="fs-6">BCS Studios <i class="fa-brands fa-unity GameEngine"></i><br> <br></h4>
+
                                 <div class="PortfolioSeparacion my-2"></div>
-                                <p class="px-1">Inspirado en el sistema de combates de "Final Fantasy Tactics", el juego
-                                    presentaba
-                                    un sistema de ataque y defensa por casillas. El prototipo incluía una IA simple para
-                                    el
-                                    enemigo, cuyo objetivo era derrotar al jugador. Proyecto hecho para el área de
-                                    experimentación.</p>
+                                <p class="px-1" data-en>Inspired by the combat system of "Final Fantasy Tactics", the
+                                    game featured a system of attack and defense by squares. The prototype included a
+                                    simple AI for the enemy, whose objective was to defeat the player. Project made for
+                                    the experimentation area.</p>
+
+
+                                <p class="px-1" data-es>Inspirado en el sistema de combates de
+                                    "Final Fantasy Tactics", el juego presentaba un sistema de ataque y defensa por
+                                    casillas. El prototipo incluía una IA simple para el enemigo, cuyo objetivo era
+                                    derrotar al jugador. Proyecto hecho para el área de experimentación.</p>
                             </div>
                         </div>
                     </div>
@@ -561,72 +523,6 @@
                     </div>
 
 
-                    <!-- <div class="col card-game">
-                        <div class="card bg-dark text-white h-100" data-bs-toggle="modal"
-                            data-bs-target="#ElementalChangeModal" style="cursor: pointer;">
-                            <img src="./Img/Ref/ElementalChange.png" class="card-img-top p-2 rounded-4"
-                                alt="Elemental Change" style="max-height: 170px; object-fit: cover;">
-                            <div class="card-body">
-                                <h5 class="card-title">Elemental Change</h5>
-                                <h3>Desarrollo de videojuegos</h3>
-                                <h4 class="fs-6">Universidad de Talca - UE5</h4>
-                                <div class="PortfolioSeparacion my-2"></div>
-                                <p class="px-1">Elemental Change trata sobre un ente del vacío que debe liberar a los
-                                    espíritus elementales
-                                    atrapados. Durante su camino, libera ríos bloqueados resolviendo puzles y derrotando
-                                    enemigos. Se trabajó principalmente en el arte, interfaces, efectos de sonido y
-                                    música, exceptuando
-                                    los personajes.</p>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <!-- <div class="modal fade bg-dark bg-opacity-25" id="ElementalChangeModal" tabindex="-1"
-                        aria-labelledby="productModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg">
-                            <div class="modal-content bg-dark text-white" id="Modal_Grafica">
-                                <div class="modal-header">
-                                    <img src="./Img/Ref/ElementalChangeTitle.png" alt="Elemental Change Logo"
-                                        style="max-height: 60px;" class="me-5 bg-light rounded-4">
-                                    <a class="btn btn-outline-info mx-2" href="https://yolmi.itch.io/elemental-change"
-                                        role="button">Jugar</a>
-                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <div id="carouselElementalChange" class="carousel slide carousel-fade"
-                                        data-bs-ride="carousel">
-                                        <div class="carousel-inner text-center">
-                                            <div class="carousel-item active" data-bs-interval="2000">
-                                                <img src="./Img/Ref/ElementalChange.png"
-                                                    class="d-block mx-auto img-fluid" alt="Elemental Change Ref 1">
-                                            </div>
-                                            <div class="carousel-item" data-bs-interval="2000">
-                                                <img src="./Img/Ref/ElementalChange.png"
-                                                    class="d-block mx-auto img-fluid" alt="Elemental Change Ref 2">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="./Img/Ref/ElementalChange.png"
-                                                    class="d-block mx-auto img-fluid" alt="Elemental Change Ref 3">
-                                            </div>
-                                        </div>
-                                        <button class="carousel-control-prev" type="button"
-                                            data-bs-target="#carouselElementalChange" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button"
-                                            data-bs-target="#carouselElementalChange" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
-
                     <div class="col card-game">
                         <div class="card bg-dark text-white h-100" data-bs-toggle="modal" data-bs-target="#DPModal"
                             style="cursor: pointer;">
@@ -634,13 +530,25 @@
                                 alt="Deadpool the game" style="max-height: 170px; object-fit: cover;">
                             <div class="card-body">
                                 <h5 class="card-title">Deadpool "the game"</h5>
-                                <h3>Desarrollo de videojuegos</h3>
-                                <h4 class="fs-6">Universidad de Talca - UE4</h4>
+
+                                <h3 data-en>Video game development</h3>
+                                <h3 data-es>Desarrollo de videojuegos</h3>
+
+                                <h4 class="fs-6" data-en>University of Talca - UE4<br><br></h4>
+                                <h4 class="fs-6" data-es>Universidad de Talca - UE4<br><br></h4>
                                 <div class="PortfolioSeparacion my-2"></div>
-                                <p class="px-1">Videojuego runner diseñado para PC. En este juego, Deadpool despierta
+
+                                <p class="px-1" data-en>Runner video game designed for PC. In this game, Deadpool wakes
+                                    up in a cave and must reach the end to find out why he is there. The project was
+                                    developed entirely using art and sound available on the internet.
+                                </p>
+
+                                <p class="px-1" data-es>Videojuego runner diseñado para PC. En
+                                    este juego, Deadpool despierta
                                     en una cueva y debe llegar al final para descubrir por qué está allí. El proyecto
-                                    fue
-                                    desarrollado completamente, utilizando arte y sonido disponibles en internet.</p>
+                                    fue desarrollado completamente, utilizando arte y sonido disponibles en internet.
+                                </p>
+
                             </div>
                         </div>
                     </div>
@@ -691,192 +599,14 @@
                         </div>
                     </div>
 
-                    <!-- 
-                    <div class="col card-game">
-                        <div class="card bg-dark text-white h-100" data-bs-toggle="modal" data-bs-target="#RunCityModal"
-                            style="cursor: pointer;">
-                            <img src="./Img/Ref/RunningintheCityTitle.png" class="card-img-top p-2 rounded-4"
-                                alt="Deadpool the game" style="max-height: 170px; object-fit: cover;">
-                            <div class="card-body">
-                                <h5 class="card-title">Running in the city</h5>
-                                <h3>Desarrollo de videojuegos</h3>
-                                <h4 class="fs-6">Universidad de Talca - UE4</h4>
-                                <div class="PortfolioSeparacion my-2"></div>
-                                <p class="px-1">Videojuego runner diseñado para dispositivos moviles, el juego cuenta
-                                    con una pista
-                                    procedural en la que debe evitar obstaculos y obtener la mayor cantidad de puntaje.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="modal fade bg-dark bg-opacity-25" id="RunCityModal" tabindex="-1"
-                        aria-labelledby="productModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg">
-                            <div class="modal-content bg-dark text-white" id="Modal_Grafica">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="productModalLabel">Running in the city </h5>
-                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <div id="carouselRunCityModal" class="carousel slide carousel-fade"
-                                        data-bs-ride="carousel">
-                                        <div class="carousel-inner text-center">
-                                            <div class="carousel-item active" data-bs-interval="2000">
-                                                <img src="./Img/Ref/RunningintheCity1.png"
-                                                    class="d-block mx-auto img-fluid"
-                                                    alt="Running in the City Screenshot 1">
-                                            </div>
-                                            <div class="carousel-item" data-bs-interval="121000">
-                                                <video controls class="card-img-top p-2 rounded-4">
-                                                    <source src="./Media/Gameplay Running in the city.mp4"
-                                                        type="video/mp4" title="Running in the City">
-                                                </video>
-                                            </div>
-                                        </div>
-                                        <button class="carousel-control-prev" type="button"
-                                            data-bs-target="#carouselRunCityModal" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button"
-                                            data-bs-target="#carouselRunCityModal" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col card-game">
-                        <div class="card bg-dark text-white h-100" data-bs-toggle="modal"
-                            data-bs-target="#Practia1Modal" style="cursor: pointer;">
-                            <img src="./Img/Ref/Practica_I_1.png" class="card-img-top p-2 rounded-4"
-                                alt="Paciente virtual" style="max-height: 170px; object-fit: cover;">
-                            <div class="card-body">
-                                <h5 class="card-title">Paciente virtual</h5>
-                                <h3>Desarrollo de videojuegos</h3>
-                                <h4 class="fs-6">Departamento de odontología - Universidad de Talca <i
-                                        class="fa-brands fa-unity GameEngine"></i></h4>
-                                <div class="PortfolioSeparacion my-2"></div>
-                                <p class="px-1">Serious Game en la cual los jugadores (estudiantes) deberian evaluar al
-                                    paciente en base a la
-                                    información obtenida de este.</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="modal fade bg-dark bg-opacity-25" id="Practia1Modal" tabindex="-1"
-                        aria-labelledby="productModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg">
-                            <div class="modal-content bg-dark text-white" id="Modal_Grafica">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="productModalLabel">Paciente Virtual <small
-                                            class="text-warning mx-2 fs-6"> Prototipo no jugable </small></h5>
-                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <div id="carouselPractica1" class="carousel slide carousel-fade"
-                                        data-bs-ride="carousel">
-                                        <div class="carousel-inner text-center">
-                                            <div class="carousel-item active" data-bs-interval="2000">
-                                                <img src="./Img/Ref/Practica_I_1.png" class="d-block mx-auto img-fluid"
-                                                    alt="Paciente virtual Ref 1">
-                                            </div>
-                                            <div class="carousel-item" data-bs-interval="2000">
-                                                <img src="./Img/Ref/Practica_I_2.png" class="d-block mx-auto img-fluid"
-                                                    alt="Paciente virtual Ref 2">
-                                            </div>
-
-
-                                        </div>
-                                        <button class="carousel-control-prev" type="button"
-                                            data-bs-target="#carouselPractica1" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button"
-                                            data-bs-target="#carouselPractica1" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col card-game">
-                        <div class="card bg-dark text-white h-100" data-bs-toggle="modal" data-bs-target="#TLSunModal"
-                            style="cursor: pointer;">
-                            <img src="./Img/Ref/TheLastSun1.jpg" class="card-img-top p-2 rounded-4" alt="The Last Sun"
-                                style="max-height: 170px; object-fit: cover;">
-                            <div class="card-body">
-                                <h5 class="card-title">The Last Sun</h5>
-                                <h3>Desarrollo de videojuegos</h3>
-                                <h4 class="fs-6">Universidad de Talca <i class="fa-brands fa-unity GameEngine"></i></h4>
-                                <div class="PortfolioSeparacion my-2"></div>
-                                <p class="px-1">Videojuego runner con temática mitología futurista, donde se debe
-                                    escapar del infierno azteca
-                                    enfrentando obstáculos y enemigos. Se trabajó de manera mixta en el arte y en la
-                                    programación, y completamente en sonido y efectos sonoros.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal fade bg-dark bg-opacity-25" id="TLSunModal" tabindex="-1"
-                        aria-labelledby="productModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg">
-                            <div class="modal-content bg-dark text-white" id="Modal_Grafica">
-                                <div class="modal-header">
-                                    <img src="./Img/Ref/TheLastSunLogo.png" alt="The Last Sun Logo"
-                                        style="max-height: 60px;">
-                                    <h5 class="modal-title ms-4" id="productModalLabel">The Last Sun </h5>
-                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <div id="carouselTLSun" class="carousel slide carousel-fade"
-                                        data-bs-ride="carousel">
-                                        <div class="carousel-inner text-center">
-                                            <div class="carousel-item active" data-bs-interval="2000">
-                                                <img src="./Img/Ref/TheLastSun.png" class="d-block mx-auto img-fluid"
-                                                    alt="The Last Sun Screenshot 1">
-                                            </div>
-                                            <div class="carousel-item" data-bs-interval="2000">
-                                                <img src="./Img/Ref/TheLastSun1.jpg" class="d-block mx-auto img-fluid"
-                                                    alt="The Last Sun Screenshot 2">
-                                            </div>
-
-                                        </div>
-                                        <button class="carousel-control-prev" type="button"
-                                            data-bs-target="#carouselTLSun" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button"
-                                            data-bs-target="#carouselTLSun" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
-
                 </div>
             </div>
         </section>
 
 
         <!-- Fin de bloque Portfolio-->
+
+
         <!-- Bloque Experiencia -->
         <section id="Experiencia" data-bs-spy="scroll">
             <div class=" my-5">
@@ -888,7 +618,9 @@
                         <div class=" card CardExp rounded-4 mx-1 h-100">
                             <div class="card-body row">
                                 <div class="col text-start fs-4">
-                                    <h2 class="pb-2">Desarrollador de videojuegos</h2>
+                                    <h2 class="pb-2" data-en>Video game developer</h2>
+
+                                    <h2 class="pb-2" data-es>Desarrollador de videojuegos</h2>
                                 </div>
                                 <div class="col text-end ">
                                     <i class="fa-brands fa-unity GameEngine pb-2"></i>
@@ -896,30 +628,40 @@
                                 </div>
 
                                 <h4 class="fs-5 mb-4">Cienart Studios</h4>
-                                <p>Desarrollo de un videojuego Endless Runner en colaboración con un equipo
+                                <p data-en>Development of an Endless Runner video game in collaboration with a
+                                    multidisciplinary team.</p>
+
+                                <p data-es>Desarrollo de un videojuego Endless Runner en
+                                    colaboración con un equipo
                                     multidisciplinario.</p>
                             </div>
                         </div>
                     </div>
 
 
-
-
                     <div class="col">
                         <div class=" card CardExp rounded-4 mx-1 h-100">
                             <div class="card-body row">
                                 <div class="col text-start fs-4">
-                                    <h2 class="pb-2">Desarrollador de videojuegos</h2>
+                                    <h2 class="pb-2" data-en>Video game developer</h2>
+
+                                    <h2 class="pb-2" data-es>Desarrollador de videojuegos</h2>
                                 </div>
                                 <div class="col text-end ">
                                     <i class="fa-brands fa-unity GameEngine pb-2"></i>
                                     <h3 class="ExpDate text-end fs-6">Jan - Feb 2023</h3>
                                 </div>
 
-                                <h4 class="fs-5 mb-4">BCS Studios - Practica</h4>
-                                <p>Creación de un prototipo de videojuego de rol táctico 1 vs. 1, inspirado en Final
-                                    Fantasy
-                                    Tactics para el área de experimentación de la empresa.</p>
+                                <h4 class="fs-5 mb-4" data-en>BCS Studios - Practice</h4>
+                                <h4 class="fs-5 mb-4" data-es>BCS Studios - Practica</h4>
+
+                                <p data-en>Creation of a prototype of a 1 vs. 1 tactical role-playing game, inspired by
+                                    Final Fantasy Tactics for the company's
+                                    experimentation area.</p>
+
+                                <p data-es>Creación de un prototipo de videojuego de rol táctico 1
+                                    vs. 1, inspirado en Final Fantasy Tactics para el área de experimentación de la
+                                    empresa.</p>
                             </div>
                         </div>
                     </div>
@@ -927,17 +669,24 @@
                         <div class=" card CardExp rounded-4 mx-1 h-100">
                             <div class="card-body row">
                                 <div class="col text-start fs-4">
-                                    <h2 class="pb-2">Desarrollador de videojuegos</h2>
+                                    <h2 class="pb-2" data-en>Video game developer</h2>
+
+                                    <h2 class="pb-2" data-es>Desarrollador de videojuegos</h2>
                                 </div>
                                 <div class="col text-end ">
                                     <i class="fa-brands fa-unity GameEngine"></i>
                                     <h3 class="ExpDate text-end fs-6">Jan - Feb 2021</h3>
                                 </div>
-                                <h4 class="fs-5 mb-4">Universidad de Talca - Practica</h4>
-                                <p>Desarrollo de un serious game para simular la evaluación de pacientes en odontología.
-                                    Trabajo en conjunto con el Dr. Francisco Franzani, utilizando recursos de Unity
-                                    Asset
-                                    Store para el arte.</p>
+                                <h4 class="fs-5 mb-4" data-en>University of Talca - Practice</h4>
+                                <h4 class="fs-5 mb-4" data-es>Universidad de Talca - Practica</h4>
+
+                                <p data-en>Development of a serious game to simulate the evaluation of patients in
+                                    dentistry. Working together with Dr. Francisco Franzani, using Unity Asset Store
+                                    resources for the art.</p>
+
+                                <p data-es>Desarrollo de un serious game para simular la
+                                    evaluación de pacientes en odontología. Trabajo en conjunto con el Dr. Francisco
+                                    Franzani, utilizando recursos de Unity Asset Store para el arte.</p>
                             </div>
                         </div>
 
@@ -980,7 +729,9 @@
 
 
                 <h2 class="mt-5">Skills</h2>
-                <h3 class="my-5">Lenguajes y framework</h3>
+                <h3 class="my-5" data-en>Languages ​​and frameworks</h3>
+                <h3 class="my-5" data-es>Lenguajes y framework</h3>
+
                 <div class="container text-center ">
                     <div class="d-flex flex-wrap g-2  justify-content-center">
 
@@ -1048,7 +799,9 @@
                 </div>
 
 
-                <h3 class="my-5">Programas</h3>
+                <h3 class="my-5" data-en>Programas</h3>
+                <h3 class="my-5" data-es>Programs</h3>
+
                 <div class="container text-center">
                     <div class="d-flex flex-wrap g-3 justify-content-center">
 
@@ -1121,7 +874,9 @@
                     </div>
                 </div>
             </div>
-            <h3 class="mb-5">Certificados y cursos</h3>
+            <h3 class="mb-5" data-en>Certificates and courses</h3>
+            <h3 class="mb-5" data-es>Certificados y cursos</h3>
+
             <div id="Certificados" class="mb-5">
 
                 <!-- <div class="CertificadoCard">
@@ -1138,105 +893,152 @@
 
                 <div class="CertificadoCard">
                     <div class="CertificadoCardTitle">
-                        <h2>Frontend con HTML, CSS y JS</h2>
-                        <h3>Febrero 2025</h3>
+                        <h2 data-en>Frontend with HTML, CSS and JS</h2>
+                        <h3 data-en>February 2025</h3>
+
+                        <h2 data-es>Frontend con HTML, CSS y JS</h2>
+                        <h3 data-es>Febrero 2025</h3>
                     </div>
 
                     <h4>Mastermind</h4>
-                    <a href="https://cdn.mastermind.ac/certificates/b5a0236dd93140e1b5af3ddc62ff7bfc.pdf">
-                        <h5>Ver credencial</h5>
+                    <a href="https://cdn.mastermind.ac/certificates/b5a0236dd93140e1b5af3ddc62ff7bfc.pdf"
+                        target="_blank">
+                        <h5 data-en>View credential</h5>
+                        <h5 data-es>Ver credencial</h5>
                     </a>
                 </div>
 
                 <div class="CertificadoCard">
                     <div class="CertificadoCardTitle">
-                        <h2>Bootstrap: Construye Sitios Web Responsive</h2>
-                        <h3>Febrero 2025</h3>
+                        <h2 data-en>Bootstrap: Build Responsive Websites</h2>
+                        <h3 data-en>February 2025</h3>
+
+                        <h2 data-es>Bootstrap: Construye Sitios Web Responsive</h2>
+                        <h3 data-es>Febrero 2025</h3>
                     </div>
 
                     <h4>Mastermind</h4>
-                    <a href="https://cdn.mastermind.ac/certificates/1df730b721374e90ad8fcb8bdaeac6f9.pdf">
-                        <h5>Ver credencial</h5>
+                    <a href="https://cdn.mastermind.ac/certificates/1df730b721374e90ad8fcb8bdaeac6f9.pdf"
+                        target="_blank">
+                        <h5 data-en>View credential</h5>
+                        <h5 data-es>Ver credencial</h5>
                     </a>
                 </div>
 
                 <div class="CertificadoCard">
                     <div class="CertificadoCardTitle">
-                        <h2>Crea páginas web con HTML y CSS</h2>
-                        <h3>Enero 2025</h3>
+                        <h2 data-en>Create web pages with HTML and CSS</h2>
+                        <h3 data-en>January 2025</h3>
+
+                        <h2 data-es>Crea páginas web con HTML y CSS</h2>
+                        <h3 data-es>Enero 2025</h3>
                     </div>
 
                     <h4>Mastermind</h4>
-                    <a href="https://cdn.mastermind.ac/certificates/a7683b3367b84dfba153e2ad14d36056.pdf">
-                        <h5>Ver credencial</h5>
+                    <a href="https://cdn.mastermind.ac/certificates/a7683b3367b84dfba153e2ad14d36056.pdf"
+                        target="_blank">
+                        <h5 data-en>View credential</h5>
+                        <h5 data-es>Ver credencial</h5>
                     </a>
                 </div>
                 <div class="CertificadoCard">
                     <div class="CertificadoCardTitle">
-                        <h2>Curso Python</h2>
-                        <h3>Diciembre 2024</h3>
+                        <h2>Python Course</h2>
+                        <h3>December 2024</h3>
+
+                        <h2 data-es>Curso de Python</h2>
+                        <h3 data-es>Diciembre 2024</h3>
                     </div>
 
                     <h4>Mastermind</h4>
-                    <a href="https://cdn.mastermind.ac/certificates/7420c7f16a784799ba3b671f50002f0b.pdf">
-                        <h5>Ver credencial</h5>
+                    <a href="https://cdn.mastermind.ac/certificates/7420c7f16a784799ba3b671f50002f0b.pdf"
+                        target="_blank">
+                        <h5 data-en>View credential</h5>
+                        <h5 data-es>Ver credencial</h5>
                     </a>
                 </div>
                 <div class="CertificadoCard">
                     <div class="CertificadoCardTitle">
-                        <h2>Curso de Aleman para principiantes</h2>
-                        <h3>Enero - Febrero 2024</h3>
+                        <h2 data-en>German course for beginners</h2>
+                        <h3 data-en>January 2024</h3>
+
+                        <h2 data-es>Curso de Aleman para principiantes</h2>
+                        <h3 data-es>Enero 2024</h3>
                     </div>
 
-                    <h4>Universidad de Talca</h4>
+                    <h4 data-en>Universidad de Talca</h4>
+                    <h4 data-es>Universidad de Talca</h4>
 
-                    <a href="https://drive.google.com/file/d/11h1-iR1jZcr-UfAh93RNjiDHF-yreJ9T/view?usp=sharing">
-                        <h5>Ver credencial</h5>
+                    <a href="https://drive.google.com/file/d/11h1-iR1jZcr-UfAh93RNjiDHF-yreJ9T/view?usp=sharing"
+                        target="_blank">
+                        <h5 data-en>View credential</h5>
+                        <h5 data-es>Ver credencial</h5>
                     </a>
 
                 </div>
                 <div class="CertificadoCard">
                     <div class="CertificadoCardTitle">
-                        <h2>Curso de optimización de PC</h2>
-                        <h3>Febrero 2023</h3>
+                        <h2 data-en>PC Optimization Course</h2>
+                        <h3 data-en>February 2023</h3>
+
+                        <h2 data-es>Curso de optimización de PC</h2>
+                        <h3 data-es>Febrero 2023</h3>
                     </div>
                     <h4>Mastermind</h4>
-                    <a href="https://cdn.mastermind.ac/certificates/78666701c183449b977f26f98386f64b.pdf">
-                        <h5>Ver credencial</h5>
+                    <a href="https://cdn.mastermind.ac/certificates/78666701c183449b977f26f98386f64b.pdf"
+                        target="_blank">
+                        <h5 data-en>View credential</h5>
+                        <h5 data-es>Ver credencial</h5>
                     </a>
                 </div>
                 <div class="CertificadoCard">
                     <div class="CertificadoCardTitle">
-                        <h2>Fundamentos de Arduino: de la teoría a tu primer programa</h2>
-                        <h3>Febrero 2023</h3>
+                        <h2 data-en>Arduino Basics: From Theory to Your First Program</h2>
+                        <h3 data-en>February 2023</h3>
+
+                        <h2 data-es>Fundamentos de Arduino: de la teoría a tu primer programa</h2>
+                        <h3 data-es>Febrero 2023</h3>
                     </div>
                     <h4>Mastermind</h4>
-                    <a href="https://cdn.mastermind.ac/certificates/b17c74d91305478c99490c4e44a63f99.pdf">
-                        <h5>Ver credencial</h5>
+                    <a href="https://cdn.mastermind.ac/certificates/b17c74d91305478c99490c4e44a63f99.pdf"
+                        target="_blank">
+                        <h5 data-en>View credential</h5>
+                        <h5 data-es>Ver credencial</h5>
                     </a>
                 </div>
                 <div class="CertificadoCard">
                     <div class="CertificadoCardTitle">
-                        <h2>Montaje de ordenadores</h2>
-                        <h3>Febrero 2023</h3>
+                        <h2 data-en>Computer assembly</h2>
+                        <h3 data-en>February 2023</h3>
+
+                        <h2 data-es>Montaje de ordenadores</h2>
+                        <h3 data-es>Febrero 2023</h3>
                     </div>
                     <h4>Mastermind</h4>
-                    <a href="https://cdn.mastermind.ac/certificates/3817db24ecfb48d1a07f936b2e3417e3.pdf">
-                        <h5>Ver credencial</h5>
+                    <a href="https://cdn.mastermind.ac/certificates/3817db24ecfb48d1a07f936b2e3417e3.pdf"
+                        target="_blank">
+                        <h5 data-en>View credential</h5>
+                        <h5 data-es>Ver credencial</h5>
                     </a>
                 </div>
             </div>
 
         </section>
         <!-- Fin de bloque Experiencia-->
+
+
         <!-- Bloque Contacto-->
         <section id="Contact" data-bs-spy="scroll">
-            <h2 class="mt-2"><b>Contacto</b></h2>
+            <h2 class="mt-2" data-en><b>Contact</b></h2>
+            <h2 class="mt-2" data-es><b>Contacto</b></h2>
 
             <!-- Temporal, crear correo js -->
             <div class="fs-4 my-5" id="Contact_Temp">
                 <h4>Cristian Andrés Peña Villar</h4>
-                <h3>Ingeniero en desarrollo de videojuegos y realidad virtual</h3>
+
+                <h3 data-en>Ingeniero en desarrollo de videojuegos y realidad virtual</h3>
+                <h3 data-es>Ingeniero en desarrollo de videojuegos y realidad virtual</h3>
+
                 <h3 class="my-4 "><a
                         href="mailto:cristian.penavillar@gmail.com"><b><u>cristian.penavillar@gmail.com</u></b></a></h3>
             </div>
@@ -1282,7 +1084,9 @@
         <script src="app.js"></script>
 
         <footer class="bg-dark text-center" data-bs-theme="dark">
-            <h6 class="fs-6 justify-content-center">© Derechos reservados Cristian Peña 2025</h6>
+            <h6 class="fs-6 justify-content-center" data-en>© Copyright Cristian Peña 2025</h6>
+            <h6 class="fs-6 justify-content-center" data-es>© Derechos reservados Cristian Peña
+                2025</h6>
         </footer>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>

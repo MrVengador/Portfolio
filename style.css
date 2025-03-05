@@ -13,6 +13,8 @@ body
     font: 200 14px Poppins, sans-serif;
 }
 
+
+
 /* titulos */
 
 h2 a
@@ -25,7 +27,7 @@ h3
 {
     color: white;
     font-weight: 200;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 a
@@ -71,6 +73,23 @@ nav ul i:hover
     color: white;
 }
 
+/* .dropdown a
+{
+    display: inline-block;
+} */
+
+[data-es]
+{
+    display: none;
+}
+
+#Language-button a
+{
+    background-color: #233f47;
+    color: #ffffff;
+    border: 1px solid #00c3ff;
+}
+
 /* INICIO */
 #Inicio
 {
@@ -111,7 +130,9 @@ h2 .name
 
 #IconsSocialMedia li
 {
-    margin-right: 30px;
+    float: left;
+    margin-right: 25px;
+
 }
 
 /* Sobre mi */
@@ -273,6 +294,11 @@ h2 .name
     color: white;
 }
 
+.MoreInfo a
+{
+    display: inline-flex;
+    align-items: center;
+}
 
 .GameEngine
 {
@@ -475,7 +501,7 @@ h2 .name
 
 #Certificados .CertificadoCard a:hover
 {
-    color: cyan;
+    color: #00c3ff;
 }
 
 #Certificados .CertificadoCardTitle
@@ -583,11 +609,7 @@ ul
 }
 
 
-li
-{
-    float: left;
-    margin-right: 25px;
-}
+
 
 
 
