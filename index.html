@@ -87,14 +87,14 @@
         <!-- Bloque sobre mí -->
         <section id="AboutMe">
             <!-- <div class="container row mx-5 my-5 bg-body text-black"> -->
-            <div class="my-4"><img src="./Img/Pefil.png" alt="Foto Cristian Peña" height="250"></div>
-            <!-- <div id="ImgMe"><img src="./Img/Pefil.png" alt="Foto Cristian Peña" height="250"></div> -->
+            <div class="my-4 " id="ImgMe"><img src="./Img/Pefil.png" alt="Foto Cristian Peña" height="250"></div>
 
-            <div id="AboutMeinfo">
+            <div id="AboutMeinfo" class="mx-5">
                 <!-- <div class="col ms-5"> -->
                 <h2 class="mb-3">Sobre mí</h2>
 
-                <p><strong>Soy Cristian Peña</strong>, ingeniero en desarrollo de videojuegos y realidad virtual, con
+                <p><strong>Soy Cristian Peña</strong>, ingeniero en desarrollo de videojuegos y
+                    realidad virtual, con
                     experiencia en
                     diseño y desarrollo de videojuegos. He participado en proyectos como un prototipo de rol táctico, un
                     <em>serious
@@ -103,11 +103,11 @@
                     en equipos multidisciplinarios y gestionar proyectos desde la concepción de la idea hasta su
                     ejecución.
                 </p>
-
+                <!-- 
                 <p>Además, cuento con conocimientos básicos de <em>frontend</em>, incluyendo HTML, CSS y JavaScript, y
                     experiencia en el
                     uso de frameworks como Bootstrap para diseñar sitios web responsivos y atractivos. En conjunto a
-                    conocimientos en el desarrollo de aplicaciones web utilizando React y Next.js.</p>
+                    conocimientos en el desarrollo de aplicaciones web utilizando React y Next.js.</p> -->
 
                 <p>Me considero una persona creativa y apasionada por mi trabajo. Disfruto aprender, porque como dice el
                     dicho:
@@ -118,9 +118,13 @@
 
                 <p>En mi tiempo libre, me gusta jugar videojuegos, ir al gimnasio, leer y escuchar musica.</p>
 
-                <div class="MoreInfo">
-                    <a href="Pdf/Cristian Peña - CV.pdf" class="btn btn-primary" id="Button_Dowload"
-                        download="Cristian_Peña_CV.pdf" id="Button_Dowload"> <i class="bi bi-filetype-pdf pe-2"></i>
+                <div class="MoreInfo mt-5">
+                    <a href="Pdf/Cristian Peña - CV.pdf" class="btn btn-danger" target="_blank">
+                        <i class="bi bi-filetype-pdf pe-2"></i>
+                        Ver CV
+                    </a>
+                    <a href="Pdf/Cristian Peña - CV.pdf" class="btn btn-primary ms-5" download="Cristian_Peña_CV.pdf"
+                        id="Button_Dowload"> <i class="bi bi-filetype-pdf pe-2"></i>
                         Descargar CV</a>
                 </div>
             </div>
@@ -134,15 +138,13 @@
         <!-- Bloque Portfolio-->
         <!-- Bloque Portfolio con Bootstrap -->
         <section id="Portfolio" data-bs-spy="scroll">
-            <div class="container my-5">
+            <div class="my-5">
                 <h2 class="py-2">Portfolio</h2>
-                <h3 class="py-2 mb-4">Proyectos destacados realizados durante mi etapa universitaria y profesional,
-                    donde
-                    colaboré en equipos
-                    multidisciplinarios, principalmente como programador y diseñador de interfaces.</h3>
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                <h3 class="py-2 mb-4">Proyectos destacables realizados durante mi etapa universitaria y profesional.
+                </h3>
+                <div class="row row-cols g-4 d-flex justify-content-center justify-content-lg-start">
 
-                    <div class="col">
+                    <div class="col card-game">
                         <div class="card bg-dark text-white h-100" data-bs-toggle="modal"
                             data-bs-target="#GhostsDeepModal" style="cursor: pointer;">
                             <img src="https://ggjv4.s3.us-west-1.amazonaws.com/files/styles/sidebar_full/s3/games/2025/837755/featured/imagen_2025-01-24_123401552.png"
@@ -155,7 +157,7 @@
                                         class="fa-brands fa-unity GameEngine"></i>
                                 </h4>
                                 <div class="PortfolioSeparacion my-2"></div>
-                                <p class="px-2">Videojuego de plataformas y rompecabezas 2D, en donde el jugador es un
+                                <p class="px-1">Videojuego de plataformas y rompecabezas 2D, en donde el jugador es un
                                     buzo que debe capturar fantasmas en barcos hundidos y recolectar tesoros sumergidos.
                                     <br>Esto utilizando un cañón de aire que le permitirá crear y mover burbujas para
                                     atrapar a sus enemigos.
@@ -213,7 +215,7 @@
 
 
 
-                    <div class="col">
+                    <!-- <div class="col card-game">
                         <div class="card bg-dark text-white h-100" data-bs-toggle="modal"
                             data-bs-target="#HopeAnimalModal" style="cursor: pointer;">
                             <img src="./Img/Ref/HopeAnimalv01.png" class="card-img-top p-2 rounded-4 img-fluid w-100"
@@ -223,7 +225,7 @@
                                 <h3>Desarrollo de videojuegos</h3>
                                 <h4 class="fs-6">Personal <i class="fa-brands fa-unity GameEngine"></i></h4>
                                 <div class="PortfolioSeparacion my-2"></div>
-                                <p class="px-2"><strong>En desarrollo:</strong> Videojuego de aventuras 3D, en donde
+                                <p class="px-1"><strong>En desarrollo:</strong> Videojuego de aventuras 3D, en donde
                                     animales magicos nos otorgaran habilidades con las cuales debemos
                                     rescatarles de unos misteriosos robots.
 
@@ -233,10 +235,10 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
-                    <div class="modal fade bg-dark bg-opacity-25" id="HopeAnimalModal" tabindex="-1"
+                    <!-- <div class="modal fade bg-dark bg-opacity-25" id="HopeAnimalModal" tabindex="-1"
                         aria-labelledby="productModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-lg">
                             <div class="modal-content bg-dark text-white" id="Modal_Grafica">
@@ -244,9 +246,7 @@
                                     <h5 class="modal-title" id="productModalLabel">Hope Animal <small
                                             class="text-warning mx-2 fs-6">En desarrollo - No
                                             jugable</small></h5>
-                                    <!-- <a class="btn btn-outline-info mx-3"
-                                        href="https://globalgamejam.org/games/2025/ghosts-deep-5"
-                                        role="button">Jugar</a> -->
+                                
 
                                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
@@ -285,9 +285,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="col">
+                    <div class="col card-game">
                         <div class="card bg-dark text-white h-100" data-bs-toggle="modal" data-bs-target="#NTSModal"
                             style="cursor: pointer;">
                             <img src="./Media/NTS_Gameplay.gif" class="card-img-top p-2 rounded-4"
@@ -297,7 +297,7 @@
                                 <h3>Desarrollo de videojuegos</h3>
                                 <h4 class="fs-6">Cienart Studios <i class="fa-brands fa-unity GameEngine"></i></h4>
                                 <div class="PortfolioSeparacion my-2"></div>
-                                <p class="px-2">Videojuego Endless Runner centrado en conducir un vehículo en carretera,
+                                <p class="px-1">Videojuego Endless Runner centrado en conducir un vehículo en carretera,
                                     donde el objetivo es
                                     evitar obstáculos y obtener un gran puntaje.
                                     <br>El videojuego se desarrolló
@@ -357,7 +357,7 @@
                         </div>
                     </div>
 
-                    <div class="col">
+                    <!-- <div class="col card-game">
                         <div class="card bg-dark text-white h-100" data-bs-toggle="modal"
                             data-bs-target="#ResistanceCodeModal" style="cursor: pointer;">
                             <img src="./Img/Ref/ResistanceCode.png" class="card-img-top p-2 rounded-4"
@@ -367,7 +367,7 @@
                                 <h3>Desarrollo de videojuegos</h3>
                                 <h4 class="fs-6">Personal <i class="fa-brands fa-unity GameEngine"></i></h4>
                                 <div class="PortfolioSeparacion my-2"></div>
-                                <p class="px-2">Inspirado en plataformeros como Megaman, este videojuego fue creado como
+                                <p class="px-1">Inspirado en plataformeros como Megaman, este videojuego fue creado como
                                     un proyecto casual,
                                     por lo que existen algunos errores leves.
                                     <br>El desarrollo fue realizado en su
@@ -378,8 +378,8 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
-
+                    </div> -->
+                    <!-- 
                     <div class="modal fade bg-dark bg-opacity-25" id="ResistanceCodeModal" tabindex="-1"
                         aria-labelledby="productModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -425,10 +425,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
-                    <div class="col">
+                    <div class="col card-game">
                         <div class="card bg-dark text-white h-100" data-bs-toggle="modal" data-bs-target="#DixitModal"
                             style="cursor: pointer;">
                             <img src="./Img/Ref/DixitPortada.png" class="card-img-top p-2 rounded-4" alt="Practica 2"
@@ -438,7 +438,7 @@
                                 <h3>Desarrollo de videojuegos</h3>
                                 <h4 class="fs-6">Universidad de Talca <i class="fa-brands fa-unity GameEngine"></i></h4>
                                 <div class="PortfolioSeparacion my-2 rounded-4"></div>
-                                <p class="px-2">Versión digital del juego de mesa “Dixit” desarrollado para un estudio
+                                <p class="px-1">Versión digital del juego de mesa “Dixit” desarrollado para un estudio
                                     academico. Se
                                     realizó toda la programación, utilizando arte de terceros, como herramientas de
                                     inteligencia
@@ -495,7 +495,7 @@
                         </div>
                     </div>
 
-                    <div class="col">
+                    <div class="col card-game">
                         <div class="card bg-dark text-white h-100" data-bs-toggle="modal"
                             data-bs-target="#Practica2Modal" style="cursor: pointer;">
                             <img src="./Media/Practica2Video.gif" class="card-img-top p-2 rounded-4" alt="Practica 2"
@@ -505,7 +505,7 @@
                                 <h3>Desarrollo de videojuegos</h3>
                                 <h4 class="fs-6">BCS Studios <i class="fa-brands fa-unity GameEngine"></i></h4>
                                 <div class="PortfolioSeparacion my-2"></div>
-                                <p class="px-2">Inspirado en el sistema de combates de "Final Fantasy Tactics", el juego
+                                <p class="px-1">Inspirado en el sistema de combates de "Final Fantasy Tactics", el juego
                                     presentaba
                                     un sistema de ataque y defensa por casillas. El prototipo incluía una IA simple para
                                     el
@@ -561,7 +561,7 @@
                     </div>
 
 
-                    <div class="col">
+                    <!-- <div class="col card-game">
                         <div class="card bg-dark text-white h-100" data-bs-toggle="modal"
                             data-bs-target="#ElementalChangeModal" style="cursor: pointer;">
                             <img src="./Img/Ref/ElementalChange.png" class="card-img-top p-2 rounded-4"
@@ -571,7 +571,7 @@
                                 <h3>Desarrollo de videojuegos</h3>
                                 <h4 class="fs-6">Universidad de Talca - UE5</h4>
                                 <div class="PortfolioSeparacion my-2"></div>
-                                <p class="px-2">Elemental Change trata sobre un ente del vacío que debe liberar a los
+                                <p class="px-1">Elemental Change trata sobre un ente del vacío que debe liberar a los
                                     espíritus elementales
                                     atrapados. Durante su camino, libera ríos bloqueados resolviendo puzles y derrotando
                                     enemigos. Se trabajó principalmente en el arte, interfaces, efectos de sonido y
@@ -579,16 +579,15 @@
                                     los personajes.</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="modal fade bg-dark bg-opacity-25" id="ElementalChangeModal" tabindex="-1"
+                    <!-- <div class="modal fade bg-dark bg-opacity-25" id="ElementalChangeModal" tabindex="-1"
                         aria-labelledby="productModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-lg">
                             <div class="modal-content bg-dark text-white" id="Modal_Grafica">
                                 <div class="modal-header">
                                     <img src="./Img/Ref/ElementalChangeTitle.png" alt="Elemental Change Logo"
                                         style="max-height: 60px;" class="me-5 bg-light rounded-4">
-                                    <!-- <h5 class="modal-title" id="productModalLabel">Elemental Change </h5> -->
                                     <a class="btn btn-outline-info mx-2" href="https://yolmi.itch.io/elemental-change"
                                         role="button">Jugar</a>
                                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
@@ -625,10 +624,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
-                    <div class="col">
+                    <div class="col card-game">
                         <div class="card bg-dark text-white h-100" data-bs-toggle="modal" data-bs-target="#DPModal"
                             style="cursor: pointer;">
                             <img src="./Img/Ref/DeadpoolGameTitle.png" class="card-img-top p-2 rounded-4"
@@ -638,7 +637,7 @@
                                 <h3>Desarrollo de videojuegos</h3>
                                 <h4 class="fs-6">Universidad de Talca - UE4</h4>
                                 <div class="PortfolioSeparacion my-2"></div>
-                                <p class="px-2">Videojuego runner diseñado para PC. En este juego, Deadpool despierta
+                                <p class="px-1">Videojuego runner diseñado para PC. En este juego, Deadpool despierta
                                     en una cueva y debe llegar al final para descubrir por qué está allí. El proyecto
                                     fue
                                     desarrollado completamente, utilizando arte y sonido disponibles en internet.</p>
@@ -692,8 +691,8 @@
                         </div>
                     </div>
 
-
-                    <div class="col">
+                    <!-- 
+                    <div class="col card-game">
                         <div class="card bg-dark text-white h-100" data-bs-toggle="modal" data-bs-target="#RunCityModal"
                             style="cursor: pointer;">
                             <img src="./Img/Ref/RunningintheCityTitle.png" class="card-img-top p-2 rounded-4"
@@ -703,7 +702,7 @@
                                 <h3>Desarrollo de videojuegos</h3>
                                 <h4 class="fs-6">Universidad de Talca - UE4</h4>
                                 <div class="PortfolioSeparacion my-2"></div>
-                                <p class="px-2">Videojuego runner diseñado para dispositivos moviles, el juego cuenta
+                                <p class="px-1">Videojuego runner diseñado para dispositivos moviles, el juego cuenta
                                     con una pista
                                     procedural en la que debe evitar obstaculos y obtener la mayor cantidad de puntaje.
                                 </p>
@@ -752,7 +751,7 @@
                         </div>
                     </div>
 
-                    <div class="col">
+                    <div class="col card-game">
                         <div class="card bg-dark text-white h-100" data-bs-toggle="modal"
                             data-bs-target="#Practia1Modal" style="cursor: pointer;">
                             <img src="./Img/Ref/Practica_I_1.png" class="card-img-top p-2 rounded-4"
@@ -763,7 +762,7 @@
                                 <h4 class="fs-6">Departamento de odontología - Universidad de Talca <i
                                         class="fa-brands fa-unity GameEngine"></i></h4>
                                 <div class="PortfolioSeparacion my-2"></div>
-                                <p class="px-2">Serious Game en la cual los jugadores (estudiantes) deberian evaluar al
+                                <p class="px-1">Serious Game en la cual los jugadores (estudiantes) deberian evaluar al
                                     paciente en base a la
                                     información obtenida de este.</p>
                             </div>
@@ -813,7 +812,7 @@
                     </div>
 
 
-                    <div class="col">
+                    <div class="col card-game">
                         <div class="card bg-dark text-white h-100" data-bs-toggle="modal" data-bs-target="#TLSunModal"
                             style="cursor: pointer;">
                             <img src="./Img/Ref/TheLastSun1.jpg" class="card-img-top p-2 rounded-4" alt="The Last Sun"
@@ -823,7 +822,7 @@
                                 <h3>Desarrollo de videojuegos</h3>
                                 <h4 class="fs-6">Universidad de Talca <i class="fa-brands fa-unity GameEngine"></i></h4>
                                 <div class="PortfolioSeparacion my-2"></div>
-                                <p class="px-2">Videojuego runner con temática mitología futurista, donde se debe
+                                <p class="px-1">Videojuego runner con temática mitología futurista, donde se debe
                                     escapar del infierno azteca
                                     enfrentando obstáculos y enemigos. Se trabajó de manera mixta en el arte y en la
                                     programación, y completamente en sonido y efectos sonoros.</p>
@@ -869,7 +868,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
                 </div>
@@ -896,7 +895,7 @@
                                     <h3 class="ExpDate text-end fs-6">Jul - Oct 2024</h3>
                                 </div>
 
-                                <h4 class="fs-5">Cienart Studios</h4>
+                                <h4 class="fs-5 mb-4">Cienart Studios</h4>
                                 <p>Desarrollo de un videojuego Endless Runner en colaboración con un equipo
                                     multidisciplinario.</p>
                             </div>
@@ -917,7 +916,7 @@
                                     <h3 class="ExpDate text-end fs-6">Jan - Feb 2023</h3>
                                 </div>
 
-                                <h4 class="fs-5">BCS Studios - Practica</h4>
+                                <h4 class="fs-5 mb-4">BCS Studios - Practica</h4>
                                 <p>Creación de un prototipo de videojuego de rol táctico 1 vs. 1, inspirado en Final
                                     Fantasy
                                     Tactics para el área de experimentación de la empresa.</p>
@@ -934,7 +933,7 @@
                                     <i class="fa-brands fa-unity GameEngine"></i>
                                     <h3 class="ExpDate text-end fs-6">Jan - Feb 2021</h3>
                                 </div>
-                                <h4 class="fs-5">Universidad de Talca - Practica</h4>
+                                <h4 class="fs-5 mb-4">Universidad de Talca - Practica</h4>
                                 <p>Desarrollo de un serious game para simular la evaluación de pacientes en odontología.
                                     Trabajo en conjunto con el Dr. Francisco Franzani, utilizando recursos de Unity
                                     Asset
@@ -943,7 +942,7 @@
                         </div>
 
                     </div>
-                    <div class="col">
+                    <!-- <div class="col">
                         <div class=" card CardExp rounded-4 mx-1 h-100">
                             <div class="card-body row">
                                 <div class="col text-start fs-4">
@@ -975,7 +974,7 @@
                                     Empleado del Mes por mi desempeño.</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
 
@@ -1282,7 +1281,7 @@
 
         <script src="app.js"></script>
 
-        <footer class="bg-dark" data-bs-theme="dark">
+        <footer class="bg-dark text-center" data-bs-theme="dark">
             <h6 class="fs-6 justify-content-center">© Derechos reservados Cristian Peña 2025</h6>
         </footer>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
