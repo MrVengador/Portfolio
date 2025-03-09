@@ -1,0 +1,124 @@
+Reset CSS *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body
+{
+    background-color: #333;
+    color: white;
+    font: 200 14px Poppins, sans-serif;
+}
+
+footer
+{
+    border-top: 2px solid #00c3ff;
+    color: #ccc;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* NAV */
+
+nav
+{
+    background-color: #222;
+    border-bottom: 1px solid #00c3ff;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+}
+
+
+
+[data-es]
+{
+    display: none;
+}
+
+
+
+#Language-button a
+{
+    background-color: #233f47;
+    color: #ffffff;
+    border: 1px solid #00c3ff;
+}
+
+/* Panel secciones */
+#PanelSections
+{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #222;
+    color: white;
+    border: 1px solid #B197FC;
+    /* border: 1px solid #00c3ff; */
+}
+
+@media (max-width: 1320px)
+{
+    #PanelSections
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Imagem */
+.Img-game
+{
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    max-height: 550px;
+    /* border: 2px solid #222; */
+    border-radius: 15px;
+    box-shadow: #333;
+}
+
+
+/* Descripcion */
+
+h1
+{
+    font-family: "Grenze", serif;
+    font-weight: 200;
+}
+
+#Title-nav
+{
+    font-family: "Grenze", serif;
+    font-weight: 200;
+    font-size: 28px;
+}
+
+h3
+{
+    font-size: clamp(16px, 2.5vw, 20px);
+    font-weight: 500;
+}
+
+
+p
+{
+    font-size: clamp(14px, 2.5vw, 18px);
+    font-weight: 200;
+}
+
+#CodeButton
+{
+    background-color: #B197FC;
+    color: #222;
+    border: 1px solid #00c3ff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    margin-top: 20px;
+    bottom: 10px;
+}
