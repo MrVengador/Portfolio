@@ -681,8 +681,11 @@ a:-moz-any-link
 
 .nav-link.active
 {
+    font-weight: normal !important;
     color: #B197FC !important;
+    /* conservas tu color */
 }
+
 
 
 
