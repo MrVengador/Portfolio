@@ -862,7 +862,17 @@ a span
             #3c4d63);
 }
 
-
+.example-2 .icon-content a[data-social="itch"] .filled,
+.example-2 .icon-content a[data-social="itch"]~.tooltip
+{
+    background: linear-gradient(45deg,
+            #fa5c5c,
+            /* rojo principal de itch.io */
+            #e04545,
+            /* un rojo más profundo */
+            #c53030);
+    /* un rojo oscuro para contraste */
+}
 
 
 /* From Uiverse.io by adamgiebl */
