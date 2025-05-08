@@ -456,6 +456,9 @@ h2 .name
     /* margin: 10px; */
     text-align: center;
     align-items: center;
+    display: inline;
+    width: 160px;
+    height: auto;
 
 }
 
@@ -473,6 +476,7 @@ h2 .name
     font-size: clamp(14px, 2.5vw, 18px);
     word-wrap: break-word;
     text-align: center;
+    align-self: center;
     color: white;
 }
 
