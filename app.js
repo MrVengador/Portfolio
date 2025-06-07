@@ -68,7 +68,6 @@ function updateCVLinks(lang) {
     }
 }
 
-
 // ==========================
 // Configuración inicial al cargar la página
 // ==========================
