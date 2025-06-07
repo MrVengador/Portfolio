@@ -62,9 +62,9 @@ function updateCVLinks(lang) {
         downloadBtn.href = "Pdf/Cristian Peña CV EN.pdf";
         downloadBtn.download = "Cristian_Peña_CV_EN.pdf";
     } else {
-        viewBtn.href = "Pdf/Cristian Peña - CV.pdf";
-        downloadBtn.href = "Pdf/Cristian Peña - CV.pdf";
-        downloadBtn.download = "Cristian_Peña_CV.pdf";
+        viewBtn.href = "Pdf/Cristian Peña CV ES.pdf";
+        downloadBtn.href = "Pdf/Cristian Peña CV ES.pdf";
+        downloadBtn.download = "Cristian Peña CV ES.pdf";
     }
 }
 
