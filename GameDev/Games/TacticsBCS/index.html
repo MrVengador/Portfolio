@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Adaptación para dispositivos móviles (Por si acaso) -->
 
-    <title>Deadpool "the game" - Cristian Peña</title> <!-- Titulo de la pagina -->
+    <title>Tactics Prototipe - Cristian Peña</title> <!-- Titulo de la pagina -->
 
     <!-- Libreria de fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +24,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styleGames.css">
+    <link rel="stylesheet" href="../styleGames.css">
+
 </head>
 
 <body>
@@ -32,13 +33,14 @@
         <div class="container-fluid mx-3">
 
             <div>
-                <a class="navbar-brand d-inline-flex align-items-center" href="/GameDev/index.html">
+                <a class="navbar-brand d-inline-flex align-items-center" href="../index.html">
                     <i class="bi bi-caret-left"></i>
                     <span data-en class="ps-1">Back</span>
                     <span data-es class="ps-1">Volver</span>
                 </a>
             </div>
-            <a class="navbar-brand" id="Title-nav">Deadpool "the game"</a>
+            <a class="navbar-brand" id="Title-nav" data-en>Tactics Prototipe</a>
+            <a class="navbar-brand" id="Title-nav" data-es>Prototipo Tactics</a>
 
 
 
@@ -66,7 +68,7 @@
     </nav>
 
     <article class="card py-5 px-3 m-4 " id="PanelSections">
-        <section id="Section-Img-game" class="col px-3 align-content-center d-flex justify-content-center py-2">
+        <section id="Section-Img-game" class="col px-3 align-content-center d-flex justify-content-center py-3">
             <div id="carouselExampleIndicators" class="carousel slide Img-game position-relative">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -78,32 +80,21 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="/Assets/Img/Ref/DeadpoolGameTitle.png"
-                            class="d-block w-100 object-fit-contain border border-2 border-black rounded-1" alt="..."
-                            style="max-height: 550px;">
+                        <img src="../Img/Ref/Practica2.png"
+                            class="d-block w-100 object-fit-scale  border border-2 border-black rounded-1"
+                            alt="Practica2" style="max-height: 550px;">
                     </div>
                     <div class="carousel-item">
-                        <img src="/Assets/Img/Ref/DeadpoolGame1.png"
-                            class="d-block w-100 object-fit-contain border border-2 border-black rounded-1" alt="..."
-                            style="max-height: 550px;">
+                        <img src="../Img/Ref/Practica2-0.png"
+                            class="d-block w-100 object-fit-contain  border border-2 border-black rounded-1"
+                            alt="Practica2" style="max-height: 550px;">
+
                     </div>
                     <div class="carousel-item">
-                        <iframe src="https://www.youtube.com/embed/ZTmV-xoM_HY?si=tRdU_CMiO6FELvtJ"
-                            title="Deadpool the game" class="d-block w-100 border border-2 border-black rounded-1"
-                            style="height: 550px;"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen>
-                        </iframe>
-                        <!-- <iframe
-                            class="d-block w-100 object-fit-contain border border-2 border-black rounded-1 img-fluid"
-                            src="https://www.youtube.com/embed/ZTmV-xoM_HY?si=tRdU_CMiO6FELvtJ"
-                            title="Deadpool the game"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                        </iframe> -->
-                        <!-- <video src="/Media/DixitGameplay.mp4"
-                            class="d-block w-100 object-fit-contain border border-2 border-black rounded-1" autoplay
-                            muted loop style="max-height: 550px;"></video> -->
+                        <img src="..//Media/Practica2Video.gif"
+                            class="d-block w-100 object-fit-contain  border border-2 border-black rounded-1"
+                            alt="Practica2" style="max-height: 550px;">
+
                     </div>
                 </div>
                 <button class="carousel-control-prev bg-dark bg-opacity-50" type="button"
@@ -119,38 +110,36 @@
                 </button>
             </div>
         </section>
-        <section id="Desc-game" class="col px-3 py-2">
+        <section id="Desc-game" class="col px-3 py-3">
             <div class="px-1 mb-5">
 
-                <h1 class="my-5  text-center">Deadpool "the game"</h1>
+                <h1 class="my-5  text-center" data-en>Tactics Prototipe</h1>
+                <h1 class="my-5  text-center" data-es>Prototipo Tactics</h1>
                 <div class="my-3">
-                    <h3 data-en>Date: <span>October – November 2021</span></h3>
-                    <h3 data-es>Fecha: <span>Octubre – Noviembre 2021</span></h3>
-                    <h3 data-en>University of Talca</h3>
-                    <h3 data-es>Universidad de Talca</h3>
+                    <h3 data-en>Date: <span>January - 2021</span></h3>
+                    <h3 data-es>Fecha: <span>Enero - 2021</span></h3>
+                    <h3>BCS Studios</h3>
+
                 </div>
 
                 <div class="pb-4 mt-5">
-                    <p class="mt-5" data-en>Runner video game designed for PC. In this game, Deadpool wakes
-                        up in a cave and must reach the end to find out why he is there. The project was
-                        developed entirely using art and sound available on the internet.
-                    </p>
+                    <p class="mt-5" data-en>Inspired by the combat system of "Final Fantasy Tactics", the
+                        game featured a system of attack and defense by squares. The prototype included a
+                        simple AI for the enemy, whose objective was to defeat the player. Project made for
+                        the experimentation area. </p>
 
-                    <p class="mt-5" data-es>Videojuego runner diseñado para PC. En
-                        este juego, Deadpool despierta
-                        en una cueva y debe llegar al final para descubrir por qué está allí. El proyecto
-                        fue desarrollado completamente, utilizando arte y sonido disponibles en internet.
-                    </p>
+                    <p class="mt-5" data-es>Inspirado en el sistema de combates de
+                        "Final Fantasy Tactics", el juego presentaba un sistema de ataque y defensa por
+                        casillas. El prototipo incluía una IA simple para el enemigo, cuyo objetivo era
+                        derrotar al jugador. Proyecto hecho para el área de experimentación. </p>
                 </div>
             </div>
             <div class="d-flex justify-content-end">
-                <!-- 
-                <a href="">
+                <!-- <a href="">
                     <button class="BtnPag">
                         <span data-en>View Code</span>
                         <span data-es>Ver codigo</span>
-                    </button>
-                </a> -->
+                    </button></a> -->
             </div>
         </section>
     </article>

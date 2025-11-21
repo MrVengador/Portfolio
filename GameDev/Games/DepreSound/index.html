@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Adaptación para dispositivos móviles (Por si acaso) -->
 
-    <title>Dixit Digital - Cristian Peña</title> <!-- Titulo de la pagina -->
+    <title>Ghosts of the deep - Cristian Peña</title> <!-- Titulo de la pagina -->
 
     <!-- Libreria de fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,11 +15,6 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200..900&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
 
     <!-- Libreria de iconos-->
     <script src="https://kit.fontawesome.com/692ff1e671.js" crossorigin="anonymous"></script>
@@ -29,7 +24,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styleGames.css">
+    <link rel="stylesheet" href="../styleGames.css">
+
 </head>
 
 <body>
@@ -37,13 +33,13 @@
         <div class="container-fluid mx-3">
 
             <div>
-                <a class="navbar-brand d-inline-flex align-items-center" href="/GameDev/index.html">
+                <a class="navbar-brand d-inline-flex align-items-center" href="/GameDev/">
                     <i class="bi bi-caret-left"></i>
                     <span data-en class="ps-1">Back</span>
                     <span data-es class="ps-1">Volver</span>
                 </a>
             </div>
-            <a class="navbar-brand" id="Title-nav">Dixit Digital</a>
+            <a class="navbar-brand" id="Title-nav">DepreSound</a>
 
 
 
@@ -70,9 +66,9 @@
         </div>
     </nav>
 
-    <article class="card py-5 px-3 m-4 py-5" id="PanelSections">
+    <article class="card py-5 px-3 m-4 " id="PanelSections">
         <section id="Section-Img-game" class="col px-3 align-content-center d-flex justify-content-center py-2">
-            <div id="carouselExampleIndicators" class="carousel slide Img-game">
+            <div id="carouselExampleIndicators" class="carousel slide Img-game position-relative">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                         class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -83,20 +79,20 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="/Assets/Img/Ref/DixitPortada.png"
+                        <img src="https://img.itch.zone/aW1nLzIyODc4NTg1LmpwZw==/original/evQXkJ.jpg"
                             class="d-block w-100 object-fit-contain border border-2 border-black rounded-1" alt="..."
                             style="max-height: 550px;">
                     </div>
                     <div class="carousel-item">
-                        <img src="/Assets/Img/Ref/Dixit.png"
+                        <img src="/Assets/Img/Ref/Depresound_01.png"
                             class="d-block w-100 object-fit-contain border border-2 border-black rounded-1" alt="..."
                             style="max-height: 550px;">
                     </div>
-                    <div class="carousel-item">
-                        <video src="/Assets/Media/DixitGameplay.mp4"
-                            class="d-block w-100 object-fit-contain border border-2 border-black rounded-1" autoplay
-                            muted loop style="max-height: 550px;"></video>
-                    </div>
+                    <!-- <div class="carousel-item">
+                        <img src="/Assets/Img/Ref/Ghost_of_the_deep_ref3.png"
+                            class="d-block w-100 object-fit-contain border border-2 border-black rounded-1" alt="..."
+                            style="max-height: 550px;">
+                    </div> -->
                 </div>
                 <button class="carousel-control-prev bg-dark bg-opacity-50" type="button"
                     data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -113,37 +109,48 @@
         </section>
         <section id="Desc-game" class="col px-3 py-2">
             <div class="px-1 mb-5">
-                <div class="d-flex align-items-center justify-content-center text-center mb-4">
-                    <img src="/Assets/Img/Ref/IconDixit_game.png" alt="Logo Dixit Digital" class="me-4"
-                        style="height: fit-content; max-width: 75px;">
-                    <!--Por si tiene img de portada -->
-                    <h1 class="my-5">Dixit Digital</h1>
+
+                <h1 class="my-5  text-center">DepreSound</h1>
+                <div class="my-3">
+                    <h3 data-en>Date: <span>August - 2025</span></h3>
+                    <h3 data-es>Fecha: <span>Agosto - 2025</span></h3>
+                    <h3 data-en>Sanda Game Jam ® 2025</h3>
+                    <h3 data-es>Sanda Game Jam ® 2025</h3>
+
                 </div>
-                <h3 data-en>Date: <span>August - December - 2023</span></h3>
-                <h3 data-es>Fecha: <span>Agosto - Diciembre - 2023</span></h3>
-                <h3 data-en>University of Talca</h3>
-                <h3 data-es>Universidad de Talca</h3>
 
                 <div class="pb-4 mt-5">
-                    <p class="mt-5" data-en>Digital version of the board game “Dixit” developed for an
-                        academic study. All programming was done using third-party art, such as artificial
-                        intelligence tools. In addition, online multiplayer was implemented with “Photon
-                        Unity Network”, and it had Android and PC compatibility.</p>
+                    <p class="mt-5" data-en>Platformer where the protagonist can nullify gravity while
+                        journeying through planets that embody the stages of grief.
+                    </p>
 
-                    <p class="mt-5" data-es>Versión digital del juego de mesa “Dixit”
-                        desarrollado para un estudio
-                        academico. Se realizó toda la programación, utilizando arte de terceros, como
-                        herramientas de inteligencia artificial. Además, se implementó el multijugador
-                        online con “Photon Unity Network”, y contaba con compatibilidad de Android y PC.</p>
+                    <p class="mt-5" data-es>Videojuego de plataformas donde la protagonista puede anular la
+                        gravedad mientras recorre planetas que representan las
+                        etapas del duelo.
+                    </p>
                 </div>
             </div>
-            <div class="d-flex justify-content-end">
-                <a href="">
-                    <button class="BtnPag">
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <a href="https://datis2.itch.io/depresound">
+                        <button class="BtnPag">
+                            <span data-en>Play</span>
+                            <span data-es>Jugar</span>
+                        </button></a>
+
+
+                    <!-- <a href="https://github.com/jorge6567/Sanda-GameJam/tree/main">
+                        <button class="BtnPag" href="">
+                            <span data-en>View Code</span>
+                            <span data-es>Ver codigo</span>
+                        </button></a> -->
+                </div>
+                <!-- <div class="col d-flex justify-content-end">
+                    <a class="btn" href="#" role="button" id="CodeButton">
                         <span data-en>View Code</span>
                         <span data-es>Ver codigo</span>
-                    </button>
-                </a>
+                    </a>
+                </div> -->
             </div>
         </section>
     </article>

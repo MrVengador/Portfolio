@@ -904,3 +904,43 @@ a span
 {
     transform: translateY(-4px);
 }
+
+/* Estilos base para todas las secciones de contenido */
+.content-section
+{
+    opacity: 0;
+    /* Por defecto, todas las secciones están ocultas */
+    transform: translateY(20px);
+    /* Un ligero desplazamiento hacia abajo para el efecto de "aparición desde abajo" */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    /* Suaviza los cambios de opacidad y posición */
+    /* width: 100%; */
+    /* Si usas position: absolute, esto ayudaría */
+    visibility: hidden;
+    /* Oculta la sección completamente cuando no está activa */
+    /* Puedes ajustar la altura mínima para evitar saltos si las secciones son muy diferentes */
+    /* min-height: 500px; */
+    /* Ajusta según tus necesidades */
+}
+
+/* Estado ACTIVO: La sección que debe ser visible */
+.content-section.active
+{
+    opacity: 1;
+    /* Completamente visible */
+    transform: translateY(0);
+    /* Vuelve a su posición original */
+    visibility: visible;
+    /* Hace visible la sección */
+    /* position: relative;  // Si usas position: absolute arriba, esta la activa */
+    /* z-index: 1; */
+}
+
+/* Opcional: Cuando una sección está saliendo (si usas un sistema de navegación por clics) */
+.content-section.exiting
+{
+    opacity: 0;
+    transform: translateY(-20px);
+    /* Opcional: que se desplace hacia arriba al salir */
+    /* Puedes controlar si es visible o no durante la salida */
+}

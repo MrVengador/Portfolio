@@ -97,7 +97,7 @@
         <!-- Bloque de inicio -->
 
         <section id="Inicio" data-bs-spy="scroll" class="pt-5">
-            <div class="">
+            <div class="content-section active">
                 <h2 class="name mb-4">Cristian Andrés Peña Villar </h2>
                 <h4 class="titulo mb-4" data-en>Engineer in video game development and virtual reality <br>University of
                     Talca</h4>
@@ -164,16 +164,17 @@
         <!-- Bloque sobre mí -->
         <section id="AboutMe">
             <!-- <div class="container row mx-5 my-5 bg-body text-black"> -->
-            <div class="my-4 " id="ImgMe"><img src="../Assets/Img/Pefil.png" alt="Foto Cristian Peña" height="250">
+            <div class="my-4 content-section" id="ImgMe"><img src="../Assets/Img/Pefil.png" alt="Foto Cristian Peña"
+                    height="250">
             </div>
 
             <div id="AboutMeinfo" class="mx-5">
                 <!-- <div class="col ms-5"> -->
-                <h2 class="mb-3" data-en>About Me</h2>
-                <h2 class="mb-3" data-es>Sobre mí</h2>
+                <h2 class="mb-3 content-section" data-en>About Me</h2>
+                <h2 class="mb-3 content-section" data-es>Sobre mí</h2>
 
 
-                <p data-en>
+                <p data-en class="content-section">
                     <strong>I am Cristian Peña</strong>, a Software Development Engineer with a solid foundation in
                     Computer Science and complex interactive systems <em>(Videogames and Virtual Reality)</em>. My
                     approach is
@@ -188,7 +189,7 @@
                     innovation proposals in multidisciplinary projects.
                 </p>
 
-                <p data-es>
+                <p data-es class="content-section">
                     <strong>Soy Cristian Peña</strong>, Ingeniero de Desarrollo de Software con una sólida base en
                     Ciencias de la Computación y sistemas interactivos complejos <em>(Videojuegos y Realidad
                         Virtual)</em>. Mi
@@ -206,7 +207,7 @@
                 </p>
 
 
-                <div class="MoreInfo mt-5 d-flex flex-column flex-md-row">
+                <div class="MoreInfo mt-5 d-flex flex-column flex-md-row content-section">
                     <a class="btn btn-danger d-flex align-items-center" target="_blank" id="viewCVBtn">
                         <i class="bi bi-filetype-pdf pe-2" style="pointer-events: none;"></i>
                         <span data-en>View CV</span>
@@ -231,7 +232,7 @@
         <!-- Bloque Portfolio-->
         <!-- Bloque Portfolio con Bootstrap -->
         <section id="Portfolio" data-bs-spy="scroll">
-            <div class="my-5">
+            <div class="my-5 content-section">
                 <h2 class="py-2">Portfolio</h2>
                 <h3 class="py-2 mb-4" data-en>Notable projects carried out during my university and professional years.
                 </h3>
@@ -376,122 +377,128 @@
                 <h2 class="my-1" data-en>Experience & <a>Skill</a></h2>
                 <h2 class="my-1" data-es>Experiencia & <a>Skill</a></h2>
 
-                <h3 class="my-5" data-en>Laboral experience </h3>
-                <h3 class="my-5" data-es>Experiencia laboral </h3>
+                <div class="content-section">
+                    <h3 class="my-5" data-en>Laboral experience </h3>
+                    <h3 class="my-5" data-es>Experiencia laboral </h3>
 
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 d-flex flex-row">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 d-flex flex-row">
 
-                    <div class="col">
-                        <div class=" card CardExp rounded-4 mx-1 h-100">
-                            <div class="card-body row">
-                                <div class="col text-start fs-4">
-                                    <h2 class="pb-2" data-en>Programmer</h2>
+                        <div class="col">
+                            <div class=" card CardExp rounded-4 mx-1 h-100">
+                                <div class="card-body row">
+                                    <div class="col text-start fs-4">
+                                        <h2 class="pb-2" data-en>Programmer</h2>
 
-                                    <h2 class="pb-2" data-es>Programador</h2>
+                                        <h2 class="pb-2" data-es>Programador</h2>
+                                    </div>
+                                    <div class="col text-end ">
+                                        <i class="fa-brands fa-unity GameEngine pb-2"></i>
+                                        <h3 class="ExpDate text-end fs-6">Jul - Oct 2024</h3>
+                                    </div>
+
+                                    <h4 class="fs-5 mb-4">Cienart Studios</h4>
+                                    <p data-en>Complete programming of an Endless Runner video game in collaboration
+                                        with a
+                                        multidisciplinary team of art
+                                        and sound. Developed for Windows and later adapted to Android platforms.</p>
+
+
+                                    <p data-es>Programación completa de un videojuego Endless Runner en colaboración con
+                                        un
+                                        equipo multidisciplinario de
+                                        arte y sonido. Desarrollado para sistemas Windows y posteriormente adaptado a
+                                        plataformas Android.</p>
+
                                 </div>
-                                <div class="col text-end ">
-                                    <i class="fa-brands fa-unity GameEngine pb-2"></i>
-                                    <h3 class="ExpDate text-end fs-6">Jul - Oct 2024</h3>
-                                </div>
-
-                                <h4 class="fs-5 mb-4">Cienart Studios</h4>
-                                <p data-en>Complete programming of an Endless Runner video game in collaboration with a
-                                    multidisciplinary team of art
-                                    and sound. Developed for Windows and later adapted to Android platforms.</p>
-
-
-                                <p data-es>Programación completa de un videojuego Endless Runner en colaboración con un
-                                    equipo multidisciplinario de
-                                    arte y sonido. Desarrollado para sistemas Windows y posteriormente adaptado a
-                                    plataformas Android.</p>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col">
-                        <div class=" card CardExp rounded-4 mx-1 h-100">
-                            <div class="card-body row">
-                                <div class="col text-start fs-4">
-                                    <h2 class="pb-2" data-en>Programmer</h2>
-
-                                    <h2 class="pb-2" data-es>Programador</h2>
-                                </div>
-                                <div class="col text-end ">
-                                    <i class="fa-brands fa-unity GameEngine pb-2"></i>
-                                    <h3 data-en class="ExpDate text-end fs-6">Jan - Feb 2023</h3>
-                                    <h3 data-es class="ExpDate text-end fs-6">Ene - Feb 2023</h3>
-                                </div>
-
-                                <h4 class="fs-5 mb-4" data-en>BCS Studios - Practice</h4>
-                                <h4 class="fs-5 mb-4" data-es>BCS Studios - Practica</h4>
-
-                                <p data-en>Creation of a prototype of a 1 vs. 1 tactical role-playing game, inspired by
-                                    Final Fantasy Tactics for the company's
-                                    experimentation area.</p>
-
-                                <p data-es>Creación de un prototipo de videojuego de rol táctico 1
-                                    vs. 1, inspirado en Final Fantasy Tactics para el área de experimentación de la
-                                    empresa.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card CardExp rounded-4 mx-1 h-100">
-                            <div class="card-body row">
-                                <div class="col text-start fs-4">
-                                    <h2 class="pb-2" data-en>Game Development Workshop Instructor</h2>
-                                    <h2 class="pb-2" data-es>Instructor de un taller de desarrollo de videojuegos</h2>
-                                </div>
-                                <div class="col text-end">
-                                    <i class="fa-solid fa-chalkboard-user GameEngine pb-2"></i>
-                                    <h3 class="ExpDate text-end fs-6">Sep - Nov 2022</h3>
-                                </div>
-
-                                <h4 class="fs-5 mb-4" data-en>Colegio Artístico del Maule</h4>
-                                <h4 class="fs-5 mb-4" data-es>Colegio Artístico del Maule</h4>
-
-                                <p data-en>Led a Scratch-based game development workshop for elementary school students,
-                                    in collaboration
-                                    with a team of peers.</p>
-                                <p data-es>Dirección de un taller de desarrollo de videojuegos con Scratch para
-                                    estudiantes de enseñanza
-                                    básica, en colaboración con un equipo de trabajo.</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col">
-                        <div class=" card CardExp rounded-4 mx-1 h-100">
-                            <div class="card-body row">
-                                <div class="col text-start fs-4">
-                                    <h2 class="pb-2" data-en>Programmer</h2>
-
-                                    <h2 class="pb-2" data-es>Programador</h2>
-                                </div>
-                                <div class="col text-end ">
-                                    <i class="fa-brands fa-unity GameEngine"></i>
-                                    <h3 data-en class="ExpDate text-end fs-6">Jan - Feb 2021</h3>
-                                    <h3 data-es class="ExpDate text-end fs-6">Ene - Feb 2021</h3>
-                                </div>
-                                <h4 class="fs-5 mb-4" data-en>University of Talca - Practice</h4>
-                                <h4 class="fs-5 mb-4" data-es>Universidad de Talca - Practica</h4>
-
-                                <p data-en>Development of a serious game to simulate the evaluation of patients in
-                                    dentistry. Working together with Dr. Francisco Franzani, using Unity Asset Store
-                                    resources for the art.</p>
-
-                                <p data-es>Desarrollo de un serious game para simular la
-                                    evaluación de pacientes en odontología. Trabajo en conjunto con el Dr. Francisco
-                                    Franzani, utilizando recursos de Unity Asset Store para el arte.</p>
                             </div>
                         </div>
 
-                    </div>
-                    <!-- <div class="col">
+
+                        <div class="col">
+                            <div class=" card CardExp rounded-4 mx-1 h-100">
+                                <div class="card-body row">
+                                    <div class="col text-start fs-4">
+                                        <h2 class="pb-2" data-en>Programmer</h2>
+
+                                        <h2 class="pb-2" data-es>Programador</h2>
+                                    </div>
+                                    <div class="col text-end ">
+                                        <i class="fa-brands fa-unity GameEngine pb-2"></i>
+                                        <h3 data-en class="ExpDate text-end fs-6">Jan - Feb 2023</h3>
+                                        <h3 data-es class="ExpDate text-end fs-6">Ene - Feb 2023</h3>
+                                    </div>
+
+                                    <h4 class="fs-5 mb-4" data-en>BCS Studios - Practice</h4>
+                                    <h4 class="fs-5 mb-4" data-es>BCS Studios - Practica</h4>
+
+                                    <p data-en>Creation of a prototype of a 1 vs. 1 tactical role-playing game, inspired
+                                        by
+                                        Final Fantasy Tactics for the company's
+                                        experimentation area.</p>
+
+                                    <p data-es>Creación de un prototipo de videojuego de rol táctico 1
+                                        vs. 1, inspirado en Final Fantasy Tactics para el área de experimentación de la
+                                        empresa.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card CardExp rounded-4 mx-1 h-100">
+                                <div class="card-body row">
+                                    <div class="col text-start fs-4">
+                                        <h2 class="pb-2" data-en>Game Development Workshop Instructor</h2>
+                                        <h2 class="pb-2" data-es>Instructor de un taller de desarrollo de videojuegos
+                                        </h2>
+                                    </div>
+                                    <div class="col text-end">
+                                        <i class="fa-solid fa-chalkboard-user GameEngine pb-2"></i>
+                                        <h3 class="ExpDate text-end fs-6">Sep - Nov 2022</h3>
+                                    </div>
+
+                                    <h4 class="fs-5 mb-4" data-en>Colegio Artístico del Maule</h4>
+                                    <h4 class="fs-5 mb-4" data-es>Colegio Artístico del Maule</h4>
+
+                                    <p data-en>Led a Scratch-based game development workshop for elementary school
+                                        students,
+                                        in collaboration
+                                        with a team of peers.</p>
+                                    <p data-es>Dirección de un taller de desarrollo de videojuegos con Scratch para
+                                        estudiantes de enseñanza
+                                        básica, en colaboración con un equipo de trabajo.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col">
+                            <div class=" card CardExp rounded-4 mx-1 h-100">
+                                <div class="card-body row">
+                                    <div class="col text-start fs-4">
+                                        <h2 class="pb-2" data-en>Programmer</h2>
+
+                                        <h2 class="pb-2" data-es>Programador</h2>
+                                    </div>
+                                    <div class="col text-end ">
+                                        <i class="fa-brands fa-unity GameEngine"></i>
+                                        <h3 data-en class="ExpDate text-end fs-6">Jan - Feb 2021</h3>
+                                        <h3 data-es class="ExpDate text-end fs-6">Ene - Feb 2021</h3>
+                                    </div>
+                                    <h4 class="fs-5 mb-4" data-en>University of Talca - Practice</h4>
+                                    <h4 class="fs-5 mb-4" data-es>Universidad de Talca - Practica</h4>
+
+                                    <p data-en>Development of a serious game to simulate the evaluation of patients in
+                                        dentistry. Working together with Dr. Francisco Franzani, using Unity Asset Store
+                                        resources for the art.</p>
+
+                                    <p data-es>Desarrollo de un serious game para simular la
+                                        evaluación de pacientes en odontología. Trabajo en conjunto con el Dr. Francisco
+                                        Franzani, utilizando recursos de Unity Asset Store para el arte.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- <div class="col">
                                 <div class=" card CardExp rounded-4 mx-1 h-100">
                                     <div class="card-body row">
                                         <div class="col text-start fs-4">
@@ -525,12 +532,13 @@
                                 </div>
                             </div> -->
 
+                    </div>
                 </div>
-
-
-                <h4 class="mt-5 mb-3">Skills</h4>
-                <h3 class="mb-5" data-en>Languages ​​and frameworks</h3>
-                <h3 class="mb-5" data-es>Lenguajes y framework</h3>
+                <div class="content-section">
+                    <h4 class="mt-5 mb-3">Skills</h4>
+                    <h3 class="mb-5" data-en>Languages ​​and frameworks</h3>
+                    <h3 class="mb-5" data-es>Lenguajes y framework</h3>
+                </div>
 
                 <div class="container text-center ">
                     <div class="d-flex flex-wrap g-2  justify-content-center">
@@ -612,90 +620,93 @@
                     </div>
                 </div>
 
+                <div class="content-section">
+                    <h3 class="mt-5 mb-3" data-en>Programs</h3>
+                    <h3 class="mt-5 mb-3" data-es>Programas</h3>
 
-                <h3 class="mt-5 mb-3" data-en>Programs</h3>
-                <h3 class="mt-5 mb-3" data-es>Programas</h3>
+                    <div class="container text-center">
+                        <div class="d-flex flex-wrap g-5 justify-content-center">
 
-                <div class="container text-center">
-                    <div class="d-flex flex-wrap g-5 justify-content-center">
+                            <div class="CardSkill rounded-5 px-3 mx-3 mb-3 text-center">
+                                <img src="../Assets/Img/Icon_Developement/Unity.png" alt="Unity" class="img-fluid">
+                                <h3 class="mt-2">Unity Engine</h3>
+                            </div>
 
-                        <div class="CardSkill rounded-5 px-3 mx-3 mb-3 text-center">
-                            <img src="../Assets/Img/Icon_Developement/Unity.png" alt="Unity" class="img-fluid">
-                            <h3 class="mt-2">Unity Engine</h3>
+                            <div class="CardSkill rounded-5 px-3 mx-3 mb-3 text-center">
+                                <img src="../Assets/Img/Icon_Developement/Unreal.png" alt="Unreal" class="img-fluid">
+                                <h3 class="mt-2">Unreal</h3>
+                            </div>
+
+                            <div class="CardSkill rounded-5 px-3 mx-3 mb-3 text-center">
+                                <img src="../Assets/Img/Icon_Developement/Github.png" alt="Github" class="img-fluid">
+                                <h3 class="mt-2">Github</h3>
+                            </div>
+
+                            <div class="CardSkill rounded-5 px-3 mx-3 mb-3 text-center">
+                                <img src="../Assets/Img/Icon_Developement/Blender.png" alt="Blender" class="img-fluid">
+                                <h3 class="mt-2">Blender</h3>
+                            </div>
+
+                            <div class="CardSkill rounded-5 px-3 mx-3 mb-3 text-center">
+                                <img src="../Assets/Img/Icon_Developement/PixelStudioIcon.png" alt="Pixel Studio"
+                                    class="img-fluid">
+                                <h3 class="mt-2">Pixel Studio</h3>
+                            </div>
+
+                            <div class="CardSkill rounded-5 px-3 mx-3 mb-3 text-center">
+                                <img src="../Assets/Img/Icon_Developement/Photoshop.png" alt="Photoshop"
+                                    class="img-fluid">
+                                <h3 class="mt-2">Adobe Photoshop</h3>
+                            </div>
+
+                            <div class="CardSkill rounded-5 px-3 mx-3 mb-3 text-center">
+                                <img src="../Assets/Img/Icon_Developement/Ilustrator.png" alt="Ilustrator"
+                                    class="img-fluid">
+                                <h3 class="mt-2">Adobe Ilustrator</h3>
+                            </div>
+
+                            <div class="CardSkill rounded-5 px-3 mx-3 mb-3 text-center">
+                                <img src="../Assets/Img/Icon_Developement/AdobePremier.png" alt="Adobe Premier"
+                                    class="img-fluid">
+                                <h3 class="mt-2">Adobe Premier</h3>
+                            </div>
+
+                            <div class="CardSkill rounded-5 px-3 mx-3 mb-3 text-center">
+                                <img src="../Assets/Img/Icon_Developement/Pencil.png" alt="Pencil" class="img-fluid">
+                                <h3 class="mt-2">Pencil</h3>
+                            </div>
+
+                            <div class="CardSkill rounded-5 px-3 mx-3 mb-3 text-center">
+                                <img src="../Assets/Img/Icon_Developement/3dsMax.png" alt="3dsMax" class="img-fluid">
+                                <h3 class="mt-2">3dsMax</h3>
+                            </div>
+
+                            <div class="CardSkill rounded-5 px-3 mx-3 mb-3 text-center">
+                                <img src="../Assets/Img/Icon_Developement/Monogame.png" alt="Monogame"
+                                    class="img-fluid">
+                                <h3 class="mt-2">Monogame</h3>
+                            </div>
+
+                            <div class="CardSkill rounded-5 px-3 mx-3 mb-3 text-center">
+                                <img src="../Assets/Img/Icon_Developement/Android_Studiog.png" alt="Android Studio"
+                                    class="img-fluid">
+                                <h3 class="mt-2">Android Studio</h3>
+                            </div>
+
+                            <div class="CardSkill rounded-5 px-3 mx-3 mb-3 text-center">
+                                <img src="https://factory.dev/PimcoreKnowledgeBaseBlogPictures/Pimcore%20vs.%20Talend%20Open%20Studio/1893/image-thumb__1893___auto_2f1ead453dab8ee85bfc594c88ec5422/pimcore-vs-talend-open-studio-comparison-talend-logo.6ee3904b.png"
+                                    alt="Talend Open Studio" class="img-fluid">
+                                <h3 class="mt-2">Talend Open Studio</h3>
+                            </div>
+
                         </div>
-
-                        <div class="CardSkill rounded-5 px-3 mx-3 mb-3 text-center">
-                            <img src="../Assets/Img/Icon_Developement/Unreal.png" alt="Unreal" class="img-fluid">
-                            <h3 class="mt-2">Unreal</h3>
-                        </div>
-
-                        <div class="CardSkill rounded-5 px-3 mx-3 mb-3 text-center">
-                            <img src="../Assets/Img/Icon_Developement/Github.png" alt="Github" class="img-fluid">
-                            <h3 class="mt-2">Github</h3>
-                        </div>
-
-                        <div class="CardSkill rounded-5 px-3 mx-3 mb-3 text-center">
-                            <img src="../Assets/Img/Icon_Developement/Blender.png" alt="Blender" class="img-fluid">
-                            <h3 class="mt-2">Blender</h3>
-                        </div>
-
-                        <div class="CardSkill rounded-5 px-3 mx-3 mb-3 text-center">
-                            <img src="../Assets/Img/Icon_Developement/PixelStudioIcon.png" alt="Pixel Studio"
-                                class="img-fluid">
-                            <h3 class="mt-2">Pixel Studio</h3>
-                        </div>
-
-                        <div class="CardSkill rounded-5 px-3 mx-3 mb-3 text-center">
-                            <img src="../Assets/Img/Icon_Developement/Photoshop.png" alt="Photoshop" class="img-fluid">
-                            <h3 class="mt-2">Adobe Photoshop</h3>
-                        </div>
-
-                        <div class="CardSkill rounded-5 px-3 mx-3 mb-3 text-center">
-                            <img src="../Assets/Img/Icon_Developement/Ilustrator.png" alt="Ilustrator"
-                                class="img-fluid">
-                            <h3 class="mt-2">Adobe Ilustrator</h3>
-                        </div>
-
-                        <div class="CardSkill rounded-5 px-3 mx-3 mb-3 text-center">
-                            <img src="../Assets/Img/Icon_Developement/AdobePremier.png" alt="Adobe Premier"
-                                class="img-fluid">
-                            <h3 class="mt-2">Adobe Premier</h3>
-                        </div>
-
-                        <div class="CardSkill rounded-5 px-3 mx-3 mb-3 text-center">
-                            <img src="../Assets/Img/Icon_Developement/Pencil.png" alt="Pencil" class="img-fluid">
-                            <h3 class="mt-2">Pencil</h3>
-                        </div>
-
-                        <div class="CardSkill rounded-5 px-3 mx-3 mb-3 text-center">
-                            <img src="../Assets/Img/Icon_Developement/3dsMax.png" alt="3dsMax" class="img-fluid">
-                            <h3 class="mt-2">3dsMax</h3>
-                        </div>
-
-                        <div class="CardSkill rounded-5 px-3 mx-3 mb-3 text-center">
-                            <img src="../Assets/Img/Icon_Developement/Monogame.png" alt="Monogame" class="img-fluid">
-                            <h3 class="mt-2">Monogame</h3>
-                        </div>
-
-                        <div class="CardSkill rounded-5 px-3 mx-3 mb-3 text-center">
-                            <img src="../Assets/Img/Icon_Developement/Android_Studiog.png" alt="Android Studio"
-                                class="img-fluid">
-                            <h3 class="mt-2">Android Studio</h3>
-                        </div>
-
-                        <div class="CardSkill rounded-5 px-3 mx-3 mb-3 text-center">
-                            <img src="https://factory.dev/PimcoreKnowledgeBaseBlogPictures/Pimcore%20vs.%20Talend%20Open%20Studio/1893/image-thumb__1893___auto_2f1ead453dab8ee85bfc594c88ec5422/pimcore-vs-talend-open-studio-comparison-talend-logo.6ee3904b.png"
-                                alt="Talend Open Studio" class="img-fluid">
-                            <h3 class="mt-2">Talend Open Studio</h3>
-                        </div>
-
                     </div>
                 </div>
+                <h2 class="my-5" data-en>Certificates and courses</h2>
+                <h2 class="my-5" data-es>Certificados y cursos</h2>
             </div>
-            <h2 class="my-5" data-en>Certificates and courses</h2>
-            <h2 class="my-5" data-es>Certificados y cursos</h2>
 
-            <div id="Certificados" class="mb-5">
+            <div id="Certificados" class="mb-5 content-section">
 
                 <!-- <div class="CertificadoCard">
                             <div class="CertificadoCardTitle">

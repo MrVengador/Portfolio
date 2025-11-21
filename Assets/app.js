@@ -78,3 +78,28 @@ document.addEventListener("DOMContentLoaded", () => {
     // Establecer idioma inicial y enlaces del CV
     setLanguage(isEnglish ? 'en' : 'es');
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('.content-section');
+
+    const observerOptions = {
+        root: null, // El viewport es el root
+        rootMargin: '0px',
+        threshold: 0.3 // Cuando el 30% de la sección es visible
+    };
+
+    const sectionObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Si la sección entra en el viewport
+                entry.target.classList.add('active');
+            } else {
+                // Si la sección sale del viewport (opcional, si quieres que se desvanezca al salir)
+                // entry.target.classList.remove('active');
+            }
+        });
+    }, observerOptions);
+
+    sections.forEach(section => {
+        sectionObserver.observe(section);
+    });
+});
