@@ -1,5 +1,5 @@
 // ==========================
-// Reinicio de medios en modales al cerrarse
+// Reinicio de medios en modales al cerrarse (Mantenido)
 // ==========================
 document.querySelectorAll('.modal').forEach(function (modal) {
     modal.addEventListener('hidden.bs.modal', function () {
@@ -20,13 +20,11 @@ document.querySelectorAll('.modal').forEach(function (modal) {
     });
 });
 
-
 // ==========================
-// Función para cambiar el idioma de la interfaz
+// Función para cambiar el idioma de la interfaz (Mantenido)
 // ==========================
 function setLanguage(lang) {
     if (lang === 'en') {
-        // Mostrar contenido en inglés, ocultar en español
         document.querySelectorAll('[data-en]').forEach(function (element) {
             element.style.display = 'block';
         });
@@ -34,7 +32,6 @@ function setLanguage(lang) {
             element.style.display = 'none';
         });
     } else if (lang === 'es') {
-        // Mostrar contenido en español, ocultar en inglés
         document.querySelectorAll('[data-es]').forEach(function (element) {
             element.style.display = 'block';
         });
@@ -42,14 +39,11 @@ function setLanguage(lang) {
             element.style.display = 'none';
         });
     }
-
-    // Actualiza los enlaces del CV según idioma seleccionado
     updateCVLinks(lang);
 }
 
-
 // ==========================
-// Función para actualizar enlaces de CV según el idioma
+// Función para actualizar enlaces de CV según el idioma (Mantenido)
 // ==========================
 function updateCVLinks(lang) {
     const viewBtn = document.getElementById('viewCVBtn');
@@ -58,48 +52,69 @@ function updateCVLinks(lang) {
     if (!viewBtn || !downloadBtn) return;
 
     if (lang === 'en') {
-        viewBtn.href = "Pdf/Cristian Peña CV EN.pdf";
-        downloadBtn.href = "Pdf/Cristian Peña CV EN.pdf";
-        downloadBtn.download = "Cristian_Peña_CV_EN.pdf";
+        viewBtn.href = "../Assets/Pdf/Cristian Peña CV EN.pdf";
+        downloadBtn.href = "../Assets/Pdf/Cristian Peña CV EN.pdf";
+        downloadBtn.download = "Cristian Peña CV EN.pdf";
     } else {
-        viewBtn.href = "Pdf/Cristian Peña CV ES.pdf";
-        downloadBtn.href = "Pdf/Cristian Peña CV ES.pdf";
+        viewBtn.href = "../Assets/Pdf/Cristian Peña CV ES.pdf";
+        downloadBtn.href = "../Assets/Pdf/Cristian Peña CV ES.pdf";
         downloadBtn.download = "Cristian Peña CV ES.pdf";
     }
 }
 
 // ==========================
-// Configuración inicial al cargar la página
+// Lógica de Inicialización (Idioma y Animación)
 // ==========================
-document.addEventListener("DOMContentLoaded", () => {
-    // Detectar idioma activo en la interfaz según visibilidad del span
-    const isEnglish = document.querySelector('span[data-en]')?.offsetParent !== null;
-
-    // Establecer idioma inicial y enlaces del CV
-    setLanguage(isEnglish ? 'en' : 'es');
-});
 document.addEventListener('DOMContentLoaded', () => {
+    // 1. INICIALIZACIÓN DEL IDIOMA
+    // ---
+    // Método más robusto para detectar el idioma inicial: usa una bandera o una cookie.
+    // Si la bandera es un <span>, asegúrate de que esté fuera de cualquier sección
+    // que tenga las clases de animación. Si no puedes moverlo, asume el español
+    // como predeterminado (o la preferencia de tu audiencia).
+
+    // **Asumiendo que 'data-en' o 'data-es' está visible en el HTML por defecto
+    // antes de que cualquier script lo oculte (o que usas una clase de idioma en el <body>):**
+    const languageToggleElement = document.querySelector('button[data-lang-toggle]'); // Ejemplo de un selector de idioma
+    let initialLang = 'es'; // Asumir español por defecto
+
+    // Si tienes un mecanismo de detección de idioma más confiable, úsalo aquí.
+    // Si la detección basada en visibilidad es la única opción:
+    const isEnglishVisible = document.querySelector('span[data-en]:not([style*="none"])')?.offsetParent !== null;
+    if (isEnglishVisible) {
+        initialLang = 'en';
+    }
+
+    setLanguage(initialLang);
+
+    // 2. CONFIGURACIÓN DEL SCROLL OBSERVADOR
+    // ---
     const sections = document.querySelectorAll('.content-section');
 
     const observerOptions = {
-        root: null, // El viewport es el root
+        root: null,
         rootMargin: '0px',
-        threshold: 0.3 // Cuando el 30% de la sección es visible
+        // Umbral más permisivo (10%) para mejor detección en móviles.
+        threshold: 0.1
     };
 
     const sectionObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Si la sección entra en el viewport
                 entry.target.classList.add('active');
-            } else {
-                // Si la sección sale del viewport (opcional, si quieres que se desvanezca al salir)
-                // entry.target.classList.remove('active');
+
+                // Opcional: Dejar de observar la sección una vez que ha aparecido.
+                // Esto mejora la performance en sitios largos, ya que no tiene que re-evaluarla.
+                // observer.unobserve(entry.target); 
             }
         });
     }, observerOptions);
 
     sections.forEach(section => {
-        sectionObserver.observe(section);
+        // MUY IMPORTANTE: Solo observa las secciones que NO están activas.
+        // La primera sección debe tener la clase 'active' en el HTML.
+        if (!section.classList.contains('active')) {
+            sectionObserver.observe(section);
+        }
     });
 });
